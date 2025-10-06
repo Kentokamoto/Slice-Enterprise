@@ -108,7 +108,7 @@
 <Counter judgementDate={eventDate.getTime()} />
 <div>
 	<div class="bg-basil flex flex-row place-content-center py-2 text-white">
-		<a class="font-bold text-white underline" href="{base}/eggnog">
+		<a class="font-bold text-white underline" href="https://www.eggnoglegjog.com">
 			Did you mean Eggnog Leg Jog?
 		</a>
 	</div>

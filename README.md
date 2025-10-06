@@ -100,7 +100,6 @@ src/
 ├── routes/                # Page routes
 │   ├── +layout.svelte     # Main layout
 │   ├── +page.svelte       # Home page
-│   ├── eggnog/            # Eggnog Leg Jog page
 │   ├── race-day-details/  # Race day information
 │   ├── taco/              # Taco page
 │   └── thank-you/         # Thank you page
