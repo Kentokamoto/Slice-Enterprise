@@ -1,21 +1,21 @@
 # Slice Enterprise
 
-A SvelteKit web application for Slice Enterprise - a running organization that combines runnning and food in a single event.
+A SvelteKit web application for Slice Enterprise — a running organization that combines running and food in a single event.
 
 ## Description
 
-Slice Enterprise hosts a number of running events around the city of Seattle to host with a theme around food. Some of these events include:
+Slice Enterprise hosts running events around Seattle with a food theme. Some of these events include:
 
 - **Slice-a-Thon**: Half Marathon run making stops at local pizza joints
 - **Taco Ocho**: 8 miles, 8 Tacos, all on August 8th
-- **Eggnog Leg Jog**: Kicking off the holiday season with some baked goods and dancing around Greenlake
+- **Eggnog Leg Jog**: Kicking off the holiday season with some baked goods and dancing around Green Lake
 
 The webapp provides a landing page for all information regarding the organization and races being hosted by Slice Enterprise.
 
 ## Requirements
 
-- **Bun**: Version 1 or higher
-- **Modern Browser**: Chrome, Firefox, Safari, or Edge with ES6 support
+- **Bun** (v1+): This project uses **Bun** as the package manager. Use `bun` for install, scripts, and running — not npm or yarn.
+- **Modern browser**: Chrome, Firefox, Safari, or Edge with ES6 support
 
 ## Install
 
@@ -79,4 +79,4 @@ This project is private and proprietary to the Seattle Slice Enterprise organize
 
 ## Contact
 
-For questions about the event, contact: (seattlesliceenterprise@gmail.com)[mailto:seattlesliceenterprise@gmail.com]
+For questions about the event, contact: [seattlesliceenterprise@gmail.com](mailto:seattlesliceenterprise@gmail.com)
