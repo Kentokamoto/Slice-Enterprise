@@ -1,44 +1,4 @@
 @import 'tailwindcss';
-@theme {
-	--color-red-sauce: #b52a04;
-	--color-crust: #f8efd9;
-	--color-orange-cheese: #fb8b23;
-	--color-yellow-cheese: #fbbf58;
-	--color-basil: #4A8440;
-	--color-orange: #f29b59;
-}
 
-@font-face {
-}
-:root {
-	font-family: 'Inter', sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
-
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-body {
-	background-color: #f8efd9;
-	color: #000000;
-	margin: 0;
-	display: flex;
-	min-width: 375px;
-	min-height: 100vh;
-}
-
-#app {
-	margin: 0 auto;
-	width: 100%;
-}
-
-summary::-webkit-details-marker {
-	display: none;
-}
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
