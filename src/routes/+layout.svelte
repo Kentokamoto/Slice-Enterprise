@@ -2,7 +2,8 @@
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 	import { MenuIcon } from '@lucide/svelte';
 	import mascotThumb from '$lib/assets/Slice-Enterprise-Mascot_thumb.webp?inline';
-
+	let { children } = $props();
+	import '../app.css';
 	let isMenuOpen = $state(false);
 	function toggleMenu() {
 		isMenuOpen = !isMenuOpen;
@@ -50,3 +51,5 @@
 		</ul>
 	</nav>
 </AppBar>
+
+{@render children()}
