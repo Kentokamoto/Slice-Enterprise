@@ -1,8 +1,15 @@
 <script>
 	import sliceAThonGroupPhoto from '$lib/assets/slice-a-thon_group_photo.webp?inline';
-	const imgSrc =
-		'https://images.unsplash.com/photo-1463171515643-952cee54d42a?q=80&w=450&h=190&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-	import { FlagIcon, PizzaIcon, RulerDimensionLineIcon, UtensilsIcon } from '@lucide/svelte';
+	import eggnogLegJogGroupPhoto from '$lib/assets/eggnog-leg-jog-preview.webp';
+	import tacoOchoGroupPhoto from '$lib/assets/taco-ocho-preview.webp';
+	import sliceAThonPreview from '$lib/assets/slice-a-thon-preview.webp';
+	import {
+		CroissantIcon,
+		FlagIcon,
+		PizzaIcon,
+		RulerDimensionLineIcon,
+		UtensilsIcon
+	} from '@lucide/svelte';
 </script>
 
 <!-- Hero Section -->
@@ -18,12 +25,16 @@
 		<p class="mb-6 text-lg text-gray-100 md:mb-8 md:text-2xl">Now that's amore!</p>
 		<div class="flex flex-col justify-center gap-4 sm:flex-row">
 			<a href="/slice-a-thon">
-				<button class="w-full bg-orange-500 text-white hover:bg-orange-600 sm:w-auto">
+				<button
+					class="w-full rounded-xl bg-orange-500/90 py-2 text-white hover:bg-orange-600 hover:shadow-lg sm:w-2xs"
+				>
 					View Our Races
 				</button>
 			</a>
 			<a href="/about">
-				<button class="w-full border-white bg-white/10 text-white hover:bg-white/20 sm:w-auto">
+				<button
+					class="w-full rounded-xl border-white bg-black/80 py-2 text-white hover:bg-black hover:shadow-lg sm:w-2xs"
+				>
 					About Us
 				</button>
 			</a>
@@ -32,25 +43,27 @@
 </section>
 <!-- Race Card Section -->
 <section class="relative m-5 flex items-center justify-center overflow-hidden">
-	<div class="grid w-full grid-cols-3 gap-4">
-		<!-- Race Card -->
+	<div class="grid w-full grid-cols-1 gap-4 px-0 py-2 md:grid-cols-2 md:px-10 lg:grid-cols-3">
+		<!-- Slice-a-thon -->
 		<div
 			class="flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-xl"
 		>
 			<div class="relative overflow-hidden">
-				<header>
-					<img src={imgSrc} class="h-full w-full object-cover" alt="banner" />
+				<header class="relative">
+					<img src={sliceAThonPreview} class="h-full w-full object-cover" alt="banner" />
+					<div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
 				</header>
 				<div class="m-3">
 					<div>
 						<h3 class="h6">May 16, 2026</h3>
 						<h2 class="h3">Slice-a-thon</h2>
 					</div>
-					<p class="line-clamp-2 opacity-60">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur provident
-						eveniet eligendi cumque consequatur tempore sint nisi sapiente. Iste beatae laboriosam
-						iure molestias cum expedita architecto itaque quae rem.
-					</p>
+					<div class="h-10">
+						<p class="line-clamp-2 opacity-60">
+							The race that started it all. Run and eat pizza from some of Seattle's best pizza
+							locations.
+						</p>
+					</div>
 					<div class="mt-4 mb-4 space-y-2">
 						<div class="flex items-center gap-2 text-gray-700">
 							<RulerDimensionLineIcon /> <span>10k and Half Marathon</span>
@@ -70,23 +83,24 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Taco Ocho -->
 		<div
 			class="flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-xl"
 		>
 			<div class="relative overflow-hidden">
-				<header>
-					<img src={imgSrc} class="h-full w-full object-cover" alt="banner" />
+				<header class="relative">
+					<img src={tacoOchoGroupPhoto} class="h-full w-full object-cover" alt="banner" />
+					<div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
 				</header>
 				<div class="m-3">
 					<div>
 						<h3 class="h6">August 8, 2026</h3>
 						<h2 class="h3">Taco Ocho</h2>
 					</div>
-					<p class="line-clamp-2 opacity-60">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur provident
-						eveniet eligendi cumque consequatur tempore sint nisi sapiente. Iste beatae laboriosam
-						iure molestias cum expedita architecto itaque quae rem.
-					</p>
+					<div class="h-10">
+						<p class=" line-clamp-2 opacity-60">8 miles, 8 tacos, all on August 8th.</p>
+					</div>
 					<div class="mt-4 mb-4 space-y-2">
 						<div class="flex items-center gap-2 text-gray-700">
 							<RulerDimensionLineIcon /> <span>8 miles</span>
@@ -107,29 +121,31 @@
 			</div>
 		</div>
 
+		<!-- Eggnog Leg Jog -->
 		<div
 			class="flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-xl"
 		>
 			<div class="relative overflow-hidden">
-				<header>
-					<img src={imgSrc} class="h-full w-full object-cover" alt="banner" />
+				<header class="relative">
+					<img src={eggnogLegJogGroupPhoto} class="h-full w-full object-cover" alt="banner" />
+					<div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
 				</header>
 				<div class="m-3">
 					<div>
 						<h3 class="h6">TBD</h3>
 						<h2 class="h3">Eggnog Leg Jog</h2>
 					</div>
-					<p class="line-clamp-2 opacity-60">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur provident
-						eveniet eligendi cumque consequatur tempore sint nisi sapiente. Iste beatae laboriosam
-						iure molestias cum expedita architecto itaque quae rem.
-					</p>
+					<div class="h-10">
+						<p class="line-clamp-2 opacity-60">
+							Kick off the holiday season with some baked goods and dancing around Green Lake!
+						</p>
+					</div>
 					<div class="mt-4 mb-4 space-y-2">
 						<div class="flex items-center gap-2 text-gray-700">
 							<RulerDimensionLineIcon /> <span>10k</span>
 						</div>
 						<div class="flex items-center gap-2 text-gray-700">
-							<PizzaIcon /><span>4 Holiday Stations</span>
+							<CroissantIcon /><span>4 Holiday Stations</span>
 						</div>
 						<div class="flex items-center gap-2 text-gray-700">
 							<FlagIcon /><span>Woodland Park</span>

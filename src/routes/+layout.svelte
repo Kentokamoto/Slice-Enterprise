@@ -8,12 +8,21 @@
 	function toggleMenu() {
 		isMenuOpen = !isMenuOpen;
 	}
+	function closeMenu() {
+		isMenuOpen = false;
+	}
+	$effect(() => {
+		document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	});
 </script>
 
-<AppBar>
+<AppBar class="relative bg-gray-100">
 	<AppBar.Toolbar class="grid-cols-[1fr_1fr] md:grid-cols-[1fr_2fr] ">
 		<AppBar.Lead>
-			<a href="/" class="flex items-center">
+			<a href="/" class="flex items-center text-2xl md:text-xl">
 				<img
 					class="m-4 w-8 flex-none place-content-center object-scale-down"
 					src={mascotThumb}
@@ -37,16 +46,21 @@
 			</button>
 		</AppBar.Trail>
 	</AppBar.Toolbar>
-	<nav class="block md:hidden" class:hidden={!isMenuOpen}>
-		<ul class="text-right">
-			<li>
-				<a href="/slice-a-thon">Slice-a-thon</a>
+	<!--  Mobile Nav Bar -->
+	<nav
+		class="fixed inset-x-0 top-25 bottom-0 z-[100] bg-gray-100 p-5 md:hidden"
+		class:hidden={!isMenuOpen}
+		aria-hidden={!isMenuOpen}
+	>
+		<ul class="mr-2 text-right text-4xl">
+			<li class="my-5">
+				<a href="/slice-a-thon" onclick={closeMenu}>Slice-a-thon</a>
 			</li>
-			<li>
-				<a href="/taco-ocho">Taco Ocho</a>
+			<li class="my-5">
+				<a href="/taco-ocho" onclick={closeMenu}>Taco Ocho</a>
 			</li>
-			<li>
-				<a href="/eggnog">Eggnog Leg Jog</a>
+			<li class="my-5">
+				<a href="/eggnog" onclick={closeMenu}>Eggnog Leg Jog</a>
 			</li>
 		</ul>
 	</nav>
