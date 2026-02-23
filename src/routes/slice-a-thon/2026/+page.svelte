@@ -3,6 +3,7 @@
 	import { CalendarFoldIcon, FlagIcon, PizzaIcon, RulerDimensionLineIcon } from '@lucide/svelte';
 	import { Tabs } from '@skeletonlabs/skeleton-svelte';
 	const eventDate = new Date('May 16, 2026 4:00 PM PDT');
+	let tabValue = 'overview';
 </script>
 
 <div class="bg-red-sauce/90 shadow-lg backdrop-blur-sm"><Counter judgementDate={eventDate} /></div>
@@ -39,8 +40,23 @@
 </div>
 
 <div class="glass-strong m-3 min-h-[30vh] rounded-2xl p-3 shadow-md">
-	<Tabs defaultValue="overview" class="flex">
-		<Tabs.List class="gap-10 font-semibold">
+	<Tabs
+		value={tabValue}
+		onValueChange={(details) => (tabValue = details.value)}
+		class="flex flex-col"
+	>
+		<div class="mb-4 md:hidden">
+			<select
+				class="bg-surface/80 text-md w-full rounded-lg p-4 font-semibold shadow-sm"
+				bind:value={tabValue}
+			>
+				<option value="overview">Overview</option>
+				<option value="route">Route</option>
+				<option value="stops">Pizza Stops</option>
+				<option value="faq">FAQ</option>
+			</select>
+		</div>
+		<Tabs.List class="hidden font-semibold md:flex md:gap-10">
 			<Tabs.Trigger value="overview">Overview</Tabs.Trigger>
 			<Tabs.Trigger value="route">Route</Tabs.Trigger>
 			<Tabs.Trigger value="stops">Pizza Stops</Tabs.Trigger>
