@@ -10,8 +10,10 @@
 		RulerDimensionLineIcon,
 		UtensilsIcon
 	} from '@lucide/svelte';
+	import PizzaBackground from './slice-a-thon/components/pizza-background.svelte';
 </script>
 
+<PizzaBackground />
 <!-- Hero Section -->
 <section class="relative flex h-[60vh] items-center justify-center overflow-hidden md:h-[70vh]">
 	<img
@@ -46,7 +48,7 @@
 	<div class="grid w-full grid-cols-1 gap-4 px-0 py-2 md:grid-cols-2 md:px-10 lg:grid-cols-3">
 		<!-- Slice-a-thon -->
 		<div
-			class="flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-xl"
+			class="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl"
 		>
 			<div class="relative overflow-hidden">
 				<header class="relative">
@@ -85,7 +87,7 @@
 
 		<!-- Taco Ocho -->
 		<div
-			class="flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-xl"
+			class="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl"
 		>
 			<div class="relative overflow-hidden">
 				<header class="relative">
@@ -121,7 +123,7 @@
 
 		<!-- Eggnog Leg Jog -->
 		<div
-			class="flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-xl"
+			class="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl"
 		>
 			<div class="relative overflow-hidden">
 				<header class="relative">

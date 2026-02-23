@@ -18,4 +18,67 @@
     --color-snow: #f1f0ed;
     --color-ornament-green: #314143;
 
+    --font-display: 'Fredoka',
+        sans-serif;
+    --font-body: 'DM Sans',
+        sans-serif;
+
+}
+
+@font-face {}
+
+:root {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-weight: 400;
+
+    color-scheme: light;
+    color: #1a1a1a;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: transparent;
+    color: #1a1a1a;
+    margin: 0;
+    min-width: 375px;
+    min-height: 100vh;
+}
+
+#app {
+    margin: 0 auto;
+    width: 100%;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(248, 239, 217, 0.72);
+    backdrop-filter: blur(16px) saturate(1.4);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+}
+
+.glass-strong {
+    background: rgba(248, 239, 217, 0.88);
+    backdrop-filter: blur(24px) saturate(1.6);
+    -webkit-backdrop-filter: blur(24px) saturate(1.6);
+}
+
+/* Counter number animation */
+@keyframes countPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }

@@ -27,10 +27,13 @@
 	injectSpeedInsights();
 </script>
 
-<AppBar class="relative bg-gray-100">
-	<AppBar.Toolbar class="grid-cols-[1fr_1fr] md:grid-cols-[1fr_2fr] ">
+<AppBar class="glass-strong relative">
+	<AppBar.Toolbar class="grid-cols-[3fr_1fr] md:grid-cols-[1fr_2fr] ">
 		<AppBar.Lead>
-			<a href="/" class="flex items-center text-2xl md:text-xl">
+			<a
+				href="/"
+				class="text-red-sauce font-display flex items-center text-2xl leading-tight font-bold md:text-3xl"
+			>
 				<img
 					class="m-4 w-8 flex-none place-content-center object-scale-down"
 					src={mascotThumb}
@@ -40,7 +43,7 @@
 			</a>
 		</AppBar.Lead>
 		<AppBar.Trail class="items-center justify-end">
-			<div class="hidden gap-4 md:flex">
+			<div class="text-red-sauce/80 hidden gap-4 text-xl font-semibold md:flex">
 				<a href="/slice-a-thon">Slice-a-thon</a>
 				<a href="/taco-ocho">Taco Ocho</a>
 				<a href="/eggnog">Eggnog Leg Jog</a>
@@ -91,14 +94,14 @@
 	</div>
 
 	<div class="col-span-1 mt-4 md:mt-0">
-		<div class=" text-lg font-bold">Races</div>
-		<a class="item-center mt-1" href="/slice-a-thon">Slice-a-thon</a>
-		<a class="item-center mt-1" href="/taco-ocho">Taco Ocho</a>
-		<a class="item-center mt-1" href="/eggnog">Eggnog Leg Jog</a>
+		<div class="text-lg font-bold">Races</div>
+		<a class="item-center mt-1 flex" href="/slice-a-thon">Slice-a-thon</a>
+		<a class="item-center mt-1 flex" href="/taco-ocho">Taco Ocho</a>
+		<a class="item-center mt-1 flex" href="/eggnog">Eggnog Leg Jog</a>
 	</div>
 	<div class="col-span-1 mt-4 md:mt-0">
 		<div class="text-lg font-bold">More</div>
-		<a class="item-center mt-1 flex" href="/about">Slice-a-thon</a>
+		<a class="item-center mt-1 flex" href="/about">About</a>
 		<a class="item-center mt-1 flex" href="mailto:slice.enterprise.seattle@gmail.com">Contact Us</a>
 	</div>
 </footer>

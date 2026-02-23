@@ -103,10 +103,12 @@
 	<title>Seattle Slice-a-Thon 2025</title>
 	<meta name="description" content="4 pizza locations in Seattle. All in a half marathon" />
 </svelte:head>
-<div class="bg-crust p-5">
-	<div class="place-content-center overflow-hidden rounded-4xl object-cover shadow-2xl">
+<div class="p-5">
+	<div class="bg-crust place-content-center overflow-hidden rounded-4xl object-cover shadow-2xl">
 		<Title iteration="First Annual" title="Seattle Slice-A-Thon" />
-		<Counter judgementDate={eventDate.getTime()} />
+		<div class="bg-red-sauce">
+			<Counter judgementDate={eventDate.getTime()} />
+		</div>
 		<div class="flex justify-center">
 			<div class="item-center mx-10 w-4xl flex-col">
 				<Story {storyParagraphs} {storyTitle} />
