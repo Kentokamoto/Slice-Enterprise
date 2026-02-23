@@ -62,15 +62,15 @@
 					<div class="h-10">
 						<p class="line-clamp-2 opacity-60">
 							The race that started it all. Run and eat pizza from some of Seattle's best pizza
-							locations.
+							spots.
 						</p>
 					</div>
 					<div class="mt-4 mb-4 space-y-2">
 						<div class="flex items-center gap-2 text-gray-700">
-							<RulerDimensionLineIcon /> <span>10k and Half Marathon</span>
+							<RulerDimensionLineIcon /> <span>10k and half marathon</span>
 						</div>
 						<div class="flex items-center gap-2 text-gray-700">
-							<PizzaIcon /><span>3 Pizza Spots</span>
+							<PizzaIcon /><span>3 pizza spots</span>
 						</div>
 						<div class="flex items-center gap-2 text-gray-700">
 							<FlagIcon /><span>Gasworks Park</span>
@@ -144,7 +144,7 @@
 							<RulerDimensionLineIcon /> <span>10k</span>
 						</div>
 						<div class="flex items-center gap-2 text-gray-700">
-							<CroissantIcon /><span>4 Holiday Stations</span>
+							<CroissantIcon /><span>4 holiday stations</span>
 						</div>
 						<div class="flex items-center gap-2 text-gray-700">
 							<FlagIcon /><span>Woodland Park</span>

@@ -27,7 +27,7 @@
 	injectSpeedInsights();
 </script>
 
-<AppBar class="glass-strong relative">
+<AppBar class="bg-crust relative">
 	<AppBar.Toolbar class="grid-cols-[3fr_1fr] md:grid-cols-[1fr_2fr] ">
 		<AppBar.Lead>
 			<a
@@ -53,17 +53,17 @@
 				class="btn-icon btn-icon-lg hover:preset-tonal md:hidden"
 				onclick={toggleMenu}
 			>
-				<MenuIcon />
+				<MenuIcon class="text-red-sauce font-semibold" />
 			</button>
 		</AppBar.Trail>
 	</AppBar.Toolbar>
 	<!--  Mobile Nav Bar -->
 	<nav
-		class="fixed inset-x-0 top-25 bottom-0 z-[100] bg-gray-100 p-5 md:hidden"
+		class="bg-crust fixed inset-x-0 top-25 bottom-0 z-[100] p-5 md:hidden"
 		class:hidden={!isMenuOpen}
 		aria-hidden={!isMenuOpen}
 	>
-		<ul class="mr-2 text-right text-4xl">
+		<ul class="text-red-sauce mr-2 text-right text-4xl font-semibold">
 			<li class="my-5">
 				<a href="/slice-a-thon" onclick={closeMenu}>Slice-a-thon</a>
 			</li>
