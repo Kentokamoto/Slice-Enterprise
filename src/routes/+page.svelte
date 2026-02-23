@@ -132,7 +132,7 @@
 				</header>
 				<div class="m-3">
 					<div>
-						<h3 class="h6">TBD</h3>
+						<h3 class="h6">November 2026</h3>
 						<h2 class="h3">Eggnog Leg Jog</h2>
 					</div>
 					<div class="h-10">

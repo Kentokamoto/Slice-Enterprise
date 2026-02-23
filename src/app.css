@@ -2,3 +2,20 @@
 
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton-svelte';
+
+@theme {
+    /* All colors below are legacy */
+    --color-red-sauce: #b52a04;
+    --color-crust: #f8efd9;
+    --color-orange-cheese: #fb8b23;
+    --color-yellow-cheese: #fbbf58;
+    --color-basil: #4a8440;
+    --color-orange: #f29b59;
+    --color-eggnog-cream: #fef5cf;
+    --color-gingerbread: #e38a11;
+    --color-holiday-green: #5b863b;
+    --color-holiday-red: #f63a1c;
+    --color-snow: #f1f0ed;
+    --color-ornament-green: #314143;
+
+}

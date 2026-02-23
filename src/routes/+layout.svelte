@@ -17,6 +17,14 @@
 			document.body.style.overflow = '';
 		};
 	});
+	//
+	// Vercel Analytics and Insights
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	// Vercel Metrics and Monitoring
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
+	injectSpeedInsights();
 </script>
 
 <AppBar class="relative bg-gray-100">
