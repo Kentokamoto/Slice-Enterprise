@@ -76,7 +76,7 @@
 		</ul>
 	</nav>
 </AppBar>
-<main>
+<main class="flex-1">
 	{@render children()}
 </main>
 

@@ -109,7 +109,9 @@
 <main class="bg-crust w-full p-5">
 	<div class="place-content-center overflow-hidden rounded-4xl object-cover shadow-2xl">
 		<Title iteration="First Annual" title="Seattle Taco Ocho" />
-		<Counter judgementDate={eventDate.getTime()} />
+		<div class="bg-red-sauce">
+			<Counter judgementDate={eventDate.getTime()} />
+		</div>
 		<div class="flex justify-center">
 			<div class="item-center mx-10 w-4xl flex-col">
 				<Story {storyTitle} {storyParagraphs} />

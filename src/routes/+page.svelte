@@ -30,7 +30,7 @@
 				<button
 					class="w-full rounded-xl bg-orange-500/90 py-2 text-white hover:bg-orange-600 hover:shadow-lg sm:w-2xs"
 				>
-					View Our Races
+					View Our Next Race
 				</button>
 			</a>
 			<a href="/about">
