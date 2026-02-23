@@ -60,14 +60,14 @@ summary::-webkit-details-marker {
 /* Glassmorphism utility */
 .glass {
     background: rgba(248, 239, 217, 0.72);
-    backdrop-filter: blur(16px) saturate(1.4);
     -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(16px) saturate(1.4);
 }
 
 .glass-strong {
     background: rgba(248, 239, 217, 0.88);
-    backdrop-filter: blur(24px) saturate(1.6);
     -webkit-backdrop-filter: blur(24px) saturate(1.6);
+    backdrop-filter: blur(24px) saturate(1.6);
 }
 
 /* Counter number animation */
