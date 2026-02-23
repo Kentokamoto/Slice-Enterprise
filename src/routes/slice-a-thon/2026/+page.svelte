@@ -45,7 +45,7 @@
 		onValueChange={(details) => (tabValue = details.value)}
 		class="flex flex-col"
 	>
-		<div class="mb-4 md:hidden">
+		<div class="mb-4 sm:hidden">
 			<select
 				class="bg-surface/80 text-md w-full rounded-lg border p-4 font-semibold shadow-md"
 				bind:value={tabValue}
@@ -56,7 +56,7 @@
 				<option value="faq">FAQ</option>
 			</select>
 		</div>
-		<Tabs.List class="hidden font-semibold md:flex md:gap-10">
+		<Tabs.List class="hidden font-semibold sm:flex md:gap-10">
 			<Tabs.Trigger value="overview">Overview</Tabs.Trigger>
 			<Tabs.Trigger value="route">Route</Tabs.Trigger>
 			<Tabs.Trigger value="stops">Pizza Stops</Tabs.Trigger>
