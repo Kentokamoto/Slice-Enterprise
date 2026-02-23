@@ -47,7 +47,7 @@
 	>
 		<div class="mb-4 md:hidden">
 			<select
-				class="bg-surface/80 text-md w-full rounded-lg p-4 font-semibold shadow-md"
+				class="bg-surface/80 text-md w-full rounded-lg border p-4 font-semibold shadow-md"
 				bind:value={tabValue}
 			>
 				<option value="overview">Overview</option>
