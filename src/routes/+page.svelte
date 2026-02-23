@@ -10,7 +10,7 @@
 		RulerDimensionLineIcon,
 		UtensilsIcon
 	} from '@lucide/svelte';
-	import PizzaBackground from './slice-a-thon/components/pizza-background.svelte';
+	import PizzaBackground from '$lib/components/pizza-background.svelte';
 </script>
 
 <PizzaBackground />

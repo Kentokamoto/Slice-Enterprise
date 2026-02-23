@@ -12,25 +12,49 @@
 		minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 		seconds = Math.floor((diff % (1000 * 60)) / 1000);
 	}, 1000);
+	const units = [
+		{
+			label: 'Days',
+			get value() {
+				return days;
+			}
+		},
+		{
+			label: 'Hours',
+			get value() {
+				return hours;
+			}
+		},
+		{
+			label: 'Minutes',
+			get value() {
+				return minutes;
+			}
+		},
+		{
+			label: 'Seconds',
+			get value() {
+				return seconds;
+			}
+		}
+	];
 </script>
 
 <div>
-	<div class=" flex flex-row place-content-center py-2 text-white">
-		<div class="px-2 text-center sm:px-10">
-			<h1>{days}</h1>
-			<h1>Days</h1>
-		</div>
-		<div class="px-2 text-center sm:px-10">
-			<h1>{hours}</h1>
-			<h1>Hours</h1>
-		</div>
-		<div class="px-2 text-center sm:px-10">
-			<h1>{minutes}</h1>
-			<h1>Minutes</h1>
-		</div>
-		<div class="px-2 text-center sm:px-10">
-			<h1>{seconds}</h1>
-			<h1>Seconds</h1>
-		</div>
+	<div
+		class="reveal-stagger mx-auto flex max-w-2xl flex-row justify-center gap-2 py-3 sm:gap-6 sm:py-4"
+	>
+		{#each units as unit (unit.label)}
+			<div class="flex min-w-16 flex-col items-center px-2 sm:min-w-20 sm:px-4">
+				<span
+					class="font-display text-3xl leading-none font-bold text-white tabular-nums sm:text-5xl"
+				>
+					{String(unit.value).padStart(2, '0')}
+				</span>
+				<span class="mt-1 text-xs font-medium tracking-wider text-white/70 uppercase sm:text-sm">
+					{unit.label}
+				</span>
+			</div>
+		{/each}
 	</div>
 </div>
