@@ -51,7 +51,6 @@
 			<div class="relative overflow-hidden">
 				<header class="relative">
 					<img src={sliceAThonPreview} class="h-full w-full object-cover" alt="banner" />
-					<div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
 				</header>
 				<div class="m-3">
 					<div>
@@ -91,7 +90,6 @@
 			<div class="relative overflow-hidden">
 				<header class="relative">
 					<img src={tacoOchoGroupPhoto} class="h-full w-full object-cover" alt="banner" />
-					<div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
 				</header>
 				<div class="m-3">
 					<div>
@@ -128,7 +126,6 @@
 			<div class="relative overflow-hidden">
 				<header class="relative">
 					<img src={eggnogLegJogGroupPhoto} class="h-full w-full object-cover" alt="banner" />
-					<div class="absolute inset-0 bg-black/30" aria-hidden="true"></div>
 				</header>
 				<div class="m-3">
 					<div>
