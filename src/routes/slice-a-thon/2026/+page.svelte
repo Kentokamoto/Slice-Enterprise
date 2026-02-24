@@ -13,6 +13,14 @@
 	let tabValue = 'overview';
 </script>
 
+<svelte:head>
+	<title>Seattle Slice-a-Thon 2026</title>
+	<meta
+		name="description"
+		content="10k and half marathon fun run around Seattle stopping by 3 pizza spots"
+	/>
+</svelte:head>
+
 <div class="bg-red-sauce/90 shadow-lg backdrop-blur-sm"><Counter judgementDate={eventDate} /></div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-4">

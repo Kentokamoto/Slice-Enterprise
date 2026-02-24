@@ -13,6 +13,11 @@
 	import PizzaBackground from '$lib/components/pizza-background.svelte';
 </script>
 
+<svelte:head>
+	<title>Slice Enterprise</title>
+	<meta name="description" content="When running and food meet and grab a bite in Seattle" />
+</svelte:head>
+
 <PizzaBackground />
 <!-- Hero Section -->
 <section class="relative flex h-[60vh] items-center justify-center overflow-hidden md:h-[70vh]">
