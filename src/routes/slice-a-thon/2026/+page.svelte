@@ -80,7 +80,7 @@
 					10k option as well making the race open to more people!
 				</p>
 				<p class="mt-1">
-					Runners will top by 3 pizza spots (2 for the 10k option) for their choice of a slice of
+					Runners will stop by 3 pizza spots (2 for the 10k option) for their choice of a slice of
 					'za. Once you return to the finish line, there will be a final slice of pie made by our
 					volunteers to round out the race
 				</p>
