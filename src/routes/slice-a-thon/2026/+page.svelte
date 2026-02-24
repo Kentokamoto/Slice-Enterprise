@@ -1,6 +1,13 @@
 <script lang="ts">
 	import Counter from '$lib/components/legacy/Counter.svelte';
-	import { CalendarFoldIcon, FlagIcon, PizzaIcon, RulerDimensionLineIcon } from '@lucide/svelte';
+	import Registration from '$lib/components/legacy/Registration.svelte';
+	import {
+		AlertCircleIcon,
+		CalendarFoldIcon,
+		FlagIcon,
+		PizzaIcon,
+		RulerDimensionLineIcon
+	} from '@lucide/svelte';
 	import { Tabs } from '@skeletonlabs/skeleton-svelte';
 	const eventDate = new Date('May 16, 2026 4:00 PM PDT');
 	let tabValue = 'overview';
@@ -79,10 +86,59 @@
 				</p>
 			</div>
 		</Tabs.Content>
-		<Tabs.Content value="route">Route Section Goes Here</Tabs.Content>
+		<Tabs.Content value="route">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+				<div class="text-center font-bold sm:p-4">
+					<h1 class="text-lg">Half Marathon Route</h1>
+					<div class="text-red-sauce flex gap-2">
+						<AlertCircleIcon />
+						<p>Route subject to change</p>
+					</div>
+					<div
+						class="strava-embed-placeholder"
+						data-embed-type="route"
+						data-embed-id="3445596670059233086"
+						data-full-width="true"
+						data-style="standard"
+						data-map-hash="11.08/47.6303/-122.3272"
+						data-from-embed="true"
+					></div>
+				</div>
+				<div class="text-center font-bold sm:p-4">
+					<h1 class="text-lg">10k Route</h1>
+					<div class="text-red-sauce flex gap-2">
+						<AlertCircleIcon />
+						<p class="text-red-sauce">Route subject to change</p>
+					</div>
+					<div
+						class="strava-embed-placeholder"
+						data-embed-type="route"
+						data-embed-id="3460125985862464372"
+						data-full-width="true"
+						data-style="standard"
+						data-map-hash="11.3/47.6276/-122.3427"
+						data-from-embed="true"
+					></div>
+					<script src="https://strava-embeds.com/embed.js"></script>
+				</div>
+			</div>
+		</Tabs.Content>
 		<Tabs.Content value="stops">Stops go here</Tabs.Content>
 		<Tabs.Content value="faq">FAQ goes here</Tabs.Content>
 	</Tabs>
 </div>
-<!-- FAQ Section -->
-<!-- Signup Form Section -->
+<div class="glass-strong m-3 min-h-[30vh] rounded-2xl border border-black/10 p-3 shadow-md">
+	<Registration iframeId={'JotFormIFrame-260540870713151'}>
+		<iframe
+			id="JotFormIFrame-260540870713151"
+			title="2026 Slice-A-Thon Registration"
+			allowtransparency
+			src="https://form.jotform.com/260540870713151"
+			frameborder="0"
+			style="min-width:100%;max-width:100%;border:none;"
+			scrolling="no"
+			width="100%"
+		>
+		</iframe>
+	</Registration>
+</div>
