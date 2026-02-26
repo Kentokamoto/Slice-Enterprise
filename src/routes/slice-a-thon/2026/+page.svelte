@@ -177,8 +177,8 @@
 			</div>
 		</Tabs.Content>
 		<Tabs.Content value="faq">
-			<Accordion multiple>
-				<Accordion.Item value="real race">
+			<Accordion multiple class="sm:text-md text-xl">
+				<Accordion.Item value="real race ">
 					<h3>
 						<Accordion.ItemTrigger class="flex items-center justify-between"
 							>Is this a real race?
