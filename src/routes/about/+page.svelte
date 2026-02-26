@@ -10,7 +10,7 @@
 <div class="bg-crust flex min-h-screen">
 	<section class="m-9 flex flex-col justify-center lg:flex-row">
 		<img
-			class=" mr-8 mb-4 h-90 w-full object-cover lg:mb-0"
+			class=" mr-8 mb-4 w-full object-cover lg:mb-0 lg:h-100"
 			alt="Part of slice enterprise founders"
 			src={partOfSliceMembers}
 		/>
