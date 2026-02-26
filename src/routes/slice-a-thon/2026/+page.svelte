@@ -1,11 +1,14 @@
 <script lang="ts">
+	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import Counter from '$lib/components/legacy/Counter.svelte';
 	import Registration from '$lib/components/legacy/Registration.svelte';
 	import {
 		AlertCircleIcon,
 		CalendarFoldIcon,
 		FlagIcon,
+		MinusIcon,
 		PizzaIcon,
+		PlusIcon,
 		RulerDimensionLineIcon
 	} from '@lucide/svelte';
 	import { Tabs } from '@skeletonlabs/skeleton-svelte';
@@ -131,8 +134,77 @@
 				</div>
 			</div>
 		</Tabs.Content>
-		<Tabs.Content value="stops">Stops go here</Tabs.Content>
-		<Tabs.Content value="faq">FAQ goes here</Tabs.Content>
+		<Tabs.Content value="stops">
+			<div class="space-y-4">
+				<div class="mb-4 flex items-center gap-2">
+					<div class="rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-700">
+						10K
+					</div>
+				</div>
+				<div class="border-l-4 border-blue-700 pl-4">
+					<h4 class="text-lg font-semibold">
+						<a href="https://maps.app.goo.gl/UvW54K21xEH6Eede7">Post Alley Pizza</a>
+					</h4>
+				</div>
+				<div class="border-l-4 border-blue-700 pl-4">
+					<h4 class="text-lg font-semibold">
+						<a href="https://maps.app.goo.gl/uPkZTgtqWMLv2BfY6">Tivoli's</a>
+					</h4>
+				</div>
+			</div>
+
+			<div class="mt-8 space-y-4">
+				<div class="mb-4 flex items-center gap-2">
+					<div class="rounded-full bg-orange-200 px-3 py-1 text-sm font-semibold text-orange-700">
+						Half Marathon
+					</div>
+				</div>
+				<div class="border-l-4 border-orange-500 pl-4">
+					<h4 class="text-lg font-semibold">
+						<a href="https://maps.app.goo.gl/Rha8MT6t1as79ZJt7">Pagliacci's on Madison</a>
+					</h4>
+				</div>
+				<div class="border-l-4 border-orange-500 pl-4">
+					<h4 class="text-lg font-semibold">
+						<a href="https://maps.app.goo.gl/UvW54K21xEH6Eede7">Post Alley Pizza</a>
+					</h4>
+				</div>
+				<div class="border-l-4 border-orange-500 pl-4">
+					<h4 class="text-lg font-semibold">
+						<a href="https://maps.app.goo.gl/uPkZTgtqWMLv2BfY6">Tivoli's</a>
+					</h4>
+				</div>
+			</div>
+		</Tabs.Content>
+		<Tabs.Content value="faq">
+			<Accordion multiple>
+				<Accordion.Item value="real race">
+					<h3>
+						<Accordion.ItemTrigger class="flex items-center justify-between"
+							>Is this a real race?
+							<Accordion.ItemIndicator class="group">
+								<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
+								<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
+							</Accordion.ItemIndicator>
+						</Accordion.ItemTrigger>
+					</h3>
+					<Accordion.ItemContent class="pr-2">Yes</Accordion.ItemContent>
+				</Accordion.Item>
+				<Accordion.Item value="Eat pizza">
+					<h3>
+						<Accordion.ItemTrigger class="flex items-center justify-between"
+							>Do I have to eat pizza?
+
+							<Accordion.ItemIndicator class="group">
+								<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
+								<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
+							</Accordion.ItemIndicator>
+						</Accordion.ItemTrigger>
+					</h3>
+					<Accordion.ItemContent class="pr-2">Yes</Accordion.ItemContent>
+				</Accordion.Item>
+			</Accordion>
+		</Tabs.Content>
 	</Tabs>
 </div>
 <div class="glass-strong m-3 min-h-[30vh] rounded-2xl border border-black/10 p-3 shadow-md">
