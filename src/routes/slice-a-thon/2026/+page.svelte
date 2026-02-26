@@ -27,28 +27,28 @@
 <div class="bg-red-sauce/90 shadow-lg backdrop-blur-sm"><Counter judgementDate={eventDate} /></div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
-	<div class="glass-strong mx-5 my-1 h-25 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
+	<div class="glass-strong mx-5 my-1 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
 		<div class="flex items-center gap-2">
 			<CalendarFoldIcon />
 			<span class="font-bold">Date</span>
 		</div>
 		<div class="mt-2">May 16, 2026</div>
 	</div>
-	<div class="glass-strong mx-5 my-1 h-25 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
+	<div class="glass-strong mx-5 my-1 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
 		<div class="flex items-center gap-2">
 			<FlagIcon />
 			<span class="font-bold">Location</span>
 		</div>
 		<div class="mt-2">Gasworks Park</div>
 	</div>
-	<div class="glass-strong mx-5 my-1 h-25 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
+	<div class="glass-strong mx-5 my-1 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
 		<div class="flex items-center gap-2">
 			<RulerDimensionLineIcon />
 			<span class="font-bold">Distance</span>
 		</div>
 		<div class="mt-2">Half Marathon (13.1 miles) and 10km</div>
 	</div>
-	<div class="glass-strong mx-5 my-1 h-25 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
+	<div class="glass-strong mx-5 my-1 rounded-2xl border border-black/10 p-3 shadow-md md:m-5">
 		<div class="flex items-center gap-2">
 			<PizzaIcon />
 			<span class="font-bold">Number of Pizza Stops</span>
