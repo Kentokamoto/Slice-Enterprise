@@ -74,9 +74,6 @@
 			<li class="my-5">
 				<a href="/eggnog" onclick={closeMenu}>Eggnog Leg Jog</a>
 			</li>
-			<li class="my-5">
-				<a href="/about" onclick={closeMenu}>About</a>
-			</li>
 		</ul>
 	</nav>
 </AppBar>
