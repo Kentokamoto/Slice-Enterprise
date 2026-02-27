@@ -1,147 +1,168 @@
 <script>
-	import Story from '$lib/Story.svelte';
-	import Details from '$lib/Details.svelte';
-	import FAQ from '$lib/FAQ.svelte';
-	import Registration from '$lib/Registration.svelte';
-	import Title from '$lib/Title.svelte';
-	import Counter from '$lib/Counter.svelte';
-
-	// Placeholders:
-	const eventDate = new Date('June 14, 2025 4:00 PM PDT');
-	const eventLocation = 'Gasworks Park';
-	const storyTitle = 'Slice-A-Thon is Born!';
-	const storyParagraphs = [
-		`While the exact moment and who said what is still unclear, one thing is for certain
-		– slice-a-thon was born on a cool fall evening in Seattle. A group of friends were gathered
-		 at a bar after completing a weekly run around the Fremont neighborhood. As the drinks and
-		 pretzels were flowing, the conversation bounced back and forth between two of the group’s
-		 favorite topics – pizza and running. There was discussion about which style reigns
-		 supreme, upcoming races and the genius that is pizza by the slice.`,
-		`As the night carried on, the two conversations slowly moved closer and closer together
-		until someone finally said “well, couldn’t we do both?” And just like that, the clouds
-		parted, a rainbow emerged across the sky and a cat and a dog high-fived, all as if to
-		emphatically say “yes, we can do both!”`,
-		`From there, the friends began drawing up the plans for the first annual slice-a-thon. The
-		vision was to create a uniquely fun race, where participants would run a half marathon
-		distance while also stopping at some local pizza by the slice places along the way.
-		Essentially run, eat, repeat until the finish line.`,
-		`If you’ve been eating pizza and going for occasional runs, this is the event you’ve been
-		training your whole life for. And if you’ve never done one or both of those things, you’re
-		especially in for a treat. The road to slice-a-thon glory is paved in sauce and cheese.`
-	];
-
-	import { base } from '$app/paths';
-	const mailtoLink = `<a href="mailto:seattlesliceathon@gmail.com"
-	                       class="text-red-sauce hover:text-red-700 underline">
-						   seattlesliceathon@gmail.com
-						</a>`;
-	const gpxLink = `<a href="${base}/Seattle-Slice-a-Thon-2025.gpx"
-	                 	class="text-red-sauce hover:text-red-700 underline">
-						Slice-A-Thon route
-					</a>`;
-
-	const faqs = [
-		{
-			title: 'Should I treat this as a race?',
-			description: `As long as you run the distance and eat the pizza, there is no wrong
-			way to do the Slice-A-Thon. If you’re feeling motivated by a challenge, aim for your
-			half marathon PR and you may win a pizza themed prize. Otherwise just relax and
-			experience the dual joy of a couple of slices while running with some friends`
-		},
-		{
-			title: 'Is there a minimum time?',
-			description: 'We’ll be around for 3 hours after the start of the race'
-		},
-		{
-			title: 'What do I need to pay for?',
-			description: `You'll need to pay for the slice of pizza at each checkpoint. Each slice
-			averages out to about $4.50.`
-		},
-		{
-			title: 'How do I prove I bought pizza?',
-			description: `After you pay for your pizza at each checkpoint, take a selfie of you
-			 eating your slice with the store sign in the background`
-		},
-		{
-			title: 'Will there be signs on the course?',
-			description: `No. We recommend downloading the route onto your phone or watch to avoid
-			getting lost. We will also have several runners at different speeds familiar with the
-			route who can help guide the way. You can download the route here: ${gpxLink}`
-		},
-		{
-			title: 'Will there be any aid stations?',
-			description: `No, we encourage people to bring their own water and will mark locations
-			along the route where people can use restrooms or find refreshments`
-		},
-		{
-			title: 'Is this race supporting any charities? ',
-			description: `After the race, we will give participants the chance to vote for
-				“Slice of the Night” by donating to a charity associated with your favorite pizza
-				stop. Giving is optional but encouraged`
-		},
-		{
-			title: 'I don’t think I can make the race anymore, what should I do?',
-			description: `No problem, please just send us an email at ${mailtoLink} to let us know
-			you won't be joining so we can adjust our pizza orders accordingly!`
-		},
-		{
-			title: 'I have different question!',
-			description: `Email it to us at ${mailtoLink}`
-		},
-		{
-			title: 'Will there be pie?',
-			description: `Yes. In addition to the pizza pies, your last task in finishing the race
-			is to eat a slice of pie.`
-		}
-	];
-
-	// JotForm
-	let jotformIframeId = 'JotFormIFrame-250816626970059';
+	import sliceAThonGroupPhoto from '$lib/assets/slice-a-thon_group_photo.webp?inline';
+	import eggnogLegJogGroupPhoto from '$lib/assets/eggnog-leg-jog-preview.webp';
+	import tacoOchoGroupPhoto from '$lib/assets/taco-ocho-preview.webp';
+	import sliceAThonPreview from '$lib/assets/slice-a-thon-preview.webp';
+	import {
+		CroissantIcon,
+		FlagIcon,
+		PizzaIcon,
+		RulerDimensionLineIcon,
+		UtensilsIcon
+	} from '@lucide/svelte';
+	import PizzaBackground from '$lib/components/pizza-background.svelte';
 </script>
 
 <svelte:head>
-	<title>2025 Seattle Slice-a-Thon</title>
-	<meta name="description" content="Eight miles, eight tacos" />
+	<title>Slice Enterprise</title>
+	<meta name="description" content="When running and food meet and grab a bite in Seattle" />
 </svelte:head>
 
-<Title iteration="First Annual" title="Seattle Slice-A-Thon" />
-<Counter judgementDate={eventDate.getTime()} />
-<div>
-	<div class="bg-basil flex flex-row place-content-center py-2 text-white">
-		<a class="font-bold text-white underline" href="https://www.eggnoglegjog.com">
-			Did you mean Eggnog Leg Jog?
-		</a>
+<PizzaBackground />
+<!-- Hero Section -->
+<section class="relative flex h-[60vh] items-center justify-center overflow-hidden md:h-[70vh]">
+	<img
+		class="absolute inset-0 h-full w-full object-cover"
+		alt="slice-a-thon 2025 attendees"
+		src={sliceAThonGroupPhoto}
+	/>
+	<div class="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-black/60"></div>
+	<div class="relative z-10 max-w-4xl px-4 text-center text-white">
+		<h1 class="mb-4 text-4xl font-bold md:mb-6 md:text-6xl">Run. Eat. Repeat.</h1>
+		<p class="mb-6 text-lg text-gray-100 md:mb-8 md:text-2xl">Now that's amore!</p>
+		<div class="flex flex-col justify-center gap-4 sm:flex-row">
+			<a href="/slice-a-thon">
+				<button
+					class="w-full rounded-xl bg-orange-500/90 py-2 text-white hover:bg-orange-600 hover:shadow-lg sm:w-2xs"
+				>
+					View Our Next Run
+				</button>
+			</a>
+			<a href="/about">
+				<button
+					class="w-full rounded-xl border-white bg-black/80 py-2 text-white hover:bg-black hover:shadow-lg sm:w-2xs"
+				>
+					About Us
+				</button>
+			</a>
+		</div>
 	</div>
-</div>
-<div class="flex justify-center">
-	<div class="item-center mx-10 w-4xl flex-col">
-		<Story {storyParagraphs} {storyTitle} />
-		<Details {eventDate} {eventLocation}>
-			<div
-				class="strava-embed-placeholder"
-				data-embed-type="route"
-				data-embed-id="3356103777858949274"
-				data-style="standard"
-				data-map-hash="11.08/47.6303/-122.3237"
-				data-from-embed="true"
-			></div>
-		</Details>
-		<FAQ {faqs} />
-		<Registration iframeId={jotformIframeId}>
-			<iframe
-				id="JotFormIFrame-250816626970059"
-				title="2025 Slice-A-Thon Registration"
-				allowtransparency
-				allow=""
-				src="https://form.jotform.com/250816626970059"
-				frameborder="0"
-				style="border:none;"
-				scrolling="no"
-				width="100%"
-				height="200px"
-				class="rounded-lg"
-			>
-			</iframe>
-		</Registration>
+</section>
+<!-- Race Card Section -->
+<section class="relative m-5 flex items-center justify-center overflow-hidden">
+	<div class="grid w-full grid-cols-1 gap-4 px-0 py-2 md:grid-cols-2 md:px-10 lg:grid-cols-3">
+		<!-- Slice-a-thon -->
+		<div
+			class="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl"
+		>
+			<div class="relative overflow-hidden">
+				<header class="relative">
+					<img src={sliceAThonPreview} class="h-full w-full object-cover" alt="banner" />
+				</header>
+				<div class="m-3">
+					<div>
+						<h3 class="h6">May 16, 2026</h3>
+						<h2 class="h3">Slice-a-thon</h2>
+					</div>
+					<div class="h-10">
+						<p class="line-clamp-2 opacity-60">
+							The race that started it all. Run and eat pizza from some of Seattle's best pizza
+							spots.
+						</p>
+					</div>
+					<div class="mt-4 mb-4 space-y-2">
+						<div class="flex items-center gap-2 text-gray-700">
+							<RulerDimensionLineIcon /> <span>10k and half marathon</span>
+						</div>
+						<div class="flex items-center gap-2 text-gray-700">
+							<PizzaIcon /><span>3 pizza spots</span>
+						</div>
+						<div class="flex items-center gap-2 text-gray-700">
+							<FlagIcon /><span>Gasworks Park</span>
+						</div>
+					</div>
+					<div class="flex w-full items-center justify-center">
+						<a class="flex w-full justify-center rounded-xl bg-amber-500" href="/slice-a-thon">
+							<button class="mx-5 my-2">More Info</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Taco Ocho -->
+		<div
+			class="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl"
+		>
+			<div class="relative overflow-hidden">
+				<header class="relative">
+					<img src={tacoOchoGroupPhoto} class="h-full w-full object-cover" alt="banner" />
+				</header>
+				<div class="m-3">
+					<div>
+						<h3 class="h6">August 8, 2026</h3>
+						<h2 class="h3">Taco Ocho</h2>
+					</div>
+					<div class="h-10">
+						<p class=" line-clamp-2 opacity-60">8 miles, 8 tacos, all on August 8th.</p>
+					</div>
+					<div class="mt-4 mb-4 space-y-2">
+						<div class="flex items-center gap-2 text-gray-700">
+							<RulerDimensionLineIcon /> <span>8 miles</span>
+						</div>
+						<div class="flex items-center gap-2 text-gray-700">
+							<UtensilsIcon /><span>3 taco locations</span>
+						</div>
+						<div class="flex items-center gap-2 text-gray-700">
+							<FlagIcon /><span>Northgate Station</span>
+						</div>
+					</div>
+					<div class="flex w-full items-center justify-center">
+						<a class="flex w-full justify-center rounded-xl bg-amber-500" href="/taco-ocho">
+							<button class="mx-5 my-2">More Info</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Eggnog Leg Jog -->
+		<div
+			class="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl"
+		>
+			<div class="relative overflow-hidden">
+				<header class="relative">
+					<img src={eggnogLegJogGroupPhoto} class="h-full w-full object-cover" alt="banner" />
+				</header>
+				<div class="m-3">
+					<div>
+						<h3 class="h6">November 2026</h3>
+						<h2 class="h3">Eggnog Leg Jog</h2>
+					</div>
+					<div class="h-10">
+						<p class="line-clamp-2 opacity-60">
+							Kick off the holiday season with some baked goods and dancing around Green Lake!
+						</p>
+					</div>
+					<div class="mt-4 mb-4 space-y-2">
+						<div class="flex items-center gap-2 text-gray-700">
+							<RulerDimensionLineIcon /> <span>10k</span>
+						</div>
+						<div class="flex items-center gap-2 text-gray-700">
+							<CroissantIcon /><span>4 holiday stations</span>
+						</div>
+						<div class="flex items-center gap-2 text-gray-700">
+							<FlagIcon /><span>Woodland Park</span>
+						</div>
+					</div>
+					<div class="flex w-full items-center justify-center">
+						<a class="flex w-full justify-center rounded-xl bg-amber-500" href="/eggnog">
+							<button class="mx-5 my-2">More Info</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+</section>
+<!-- TODO: Stats section should include how many races are organized by Slice   -->
