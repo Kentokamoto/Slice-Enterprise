@@ -7,21 +7,22 @@
 	<meta name="description" content="When running and our love for pizza met in the middle." />
 </svelte:head>
 
-<div class="bg-crust flex min-h-screen">
-	<section class="m-9 flex flex-col justify-center lg:flex-row">
+<div class="bg-crust flex min-h-screen flex-col items-center-safe">
+	<section class="m-9 flex flex-col justify-center lg:w-300 lg:flex-row">
 		<img
 			class=" mr-8 mb-4 w-full object-cover lg:mb-0 lg:h-100"
 			alt="Part of slice enterprise founders"
 			src={partOfSliceMembers}
 		/>
 		<div class="space-y-4">
+			<h1 class="text-red-sauce text-2xl font-bold">A Match Made in Heaven</h1>
 			<p class="">
-				Slice Enterprise started with a simple but delicious idea: what if a race ended with pizza?
-				In 2025, that idea became our first-ever Slice-a-Thon event in Seattle, and the energy from
-				that day made it clear we were onto something special. Runners showed up, had a blast, and
-				left with full stomachs. Not long after, a member pitched a taco-themed race. Then came the
-				idea for a holiday-themed event, and that’s when it hit us: this was more than just one
-				race. Slice Enterprise was born.
+				Slice Enterprise started with a simple but delicious idea: what if we could have pizza
+				during our race? In 2025, that idea became our first-ever Slice-a-Thon event in Seattle, and
+				the energy from that day made it clear we were onto something special. Runners showed up,
+				had a blast, and left with full stomachs. Not long after, a member pitched a taco-themed
+				race. Then came the idea for a holiday-themed event, and that’s when it hit us: this was
+				more than just one race. Slice Enterprise was born.
 			</p>
 			<p class="">
 				From the very beginning, Slice Enterprise has been shaped by its community. The ideas that
@@ -39,7 +40,6 @@
 		</div>
 	</section>
 	<!-- TODO: Basic Stats like when it was founded -->
-	<section></section>
 
 	<section></section>
 </div>

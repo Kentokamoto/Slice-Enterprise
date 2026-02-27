@@ -32,7 +32,8 @@
 		<AppBar.Lead>
 			<a
 				href="/"
-				class="text-red-sauce font-display flex items-center text-2xl leading-tight font-bold md:text-3xl"
+				class="text-red-sauce font-display flex items-center text-3xl leading-tight font-bold md:text-2xl"
+				onclick={closeMenu}
 			>
 				<img
 					class="m-4 w-8 flex-none place-content-center object-scale-down"

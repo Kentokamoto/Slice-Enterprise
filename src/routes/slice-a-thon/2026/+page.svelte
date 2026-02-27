@@ -207,18 +207,22 @@
 		</Tabs.Content>
 	</Tabs>
 </div>
-<div class="glass-strong m-3 min-h-[30vh] rounded-2xl border border-black/10 p-3 shadow-md">
-	<Registration iframeId={'JotFormIFrame-260540870713151'}>
-		<iframe
-			id="JotFormIFrame-260540870713151"
-			title="2026 Slice-A-Thon Registration"
-			allowtransparency
-			src="https://form.jotform.com/260540870713151"
-			frameborder="0"
-			style="min-width:100%;max-width:100%;border:none;"
-			scrolling="no"
-			width="100%"
-		>
-		</iframe>
-	</Registration>
+<div
+	class="glass-strong m-3 flex min-h-[30vh] flex-col items-center rounded-2xl border border-black/10 p-3 shadow-md"
+>
+	<div class="w-full lg:w-3xl">
+		<Registration iframeId={'JotFormIFrame-260540870713151'}>
+			<iframe
+				id="JotFormIFrame-260540870713151"
+				title="2026 Slice-A-Thon Registration"
+				allowtransparency
+				src="https://form.jotform.com/260540870713151"
+				frameborder="0"
+				style="min-width:100%;max-width:100%;border:none;"
+				scrolling="no"
+				width="100%"
+			>
+			</iframe>
+		</Registration>
+	</div>
 </div>
