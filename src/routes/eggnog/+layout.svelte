@@ -1,11 +1,13 @@
 <script>
+	import { page } from '$app/state';
+
 	let { children } = $props();
 </script>
 
-<div class="flex w-full items-center justify-center bg-amber-400">
-	<a href="/eggnog/2025">
-		<button> 2025 </button>
+{@render children()}
+
+<div class="flex h-20 w-full items-center justify-center gap-5 bg-orange-300 text-lg">
+	<a href="/taco-ocho/2025">
+		<button class:font-bold={page.url.pathname.includes(String(2025))}>2025</button>
 	</a>
 </div>
-
-{@render children()}

@@ -2,10 +2,6 @@
 	let { children } = $props();
 	import { page } from '$app/state';
 
-	const currentYear = Number(
-		page.url.pathname.split('/').find((segment) => /^\d{4}$/.test(segment))
-	);
-	console.log(currentYear);
 	import PizzaBackground from '../../lib/components/pizza-background.svelte';
 </script>
 
