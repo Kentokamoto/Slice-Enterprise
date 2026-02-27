@@ -48,6 +48,7 @@
 				<a href="/slice-a-thon">Slice-a-thon</a>
 				<a href="/taco-ocho">Taco Ocho</a>
 				<a href="/eggnog">Eggnog Leg Jog</a>
+				<a href="/about">About</a>
 			</div>
 			<button
 				type="button"
@@ -73,6 +74,9 @@
 			</li>
 			<li class="my-5">
 				<a href="/eggnog" onclick={closeMenu}>Eggnog Leg Jog</a>
+			</li>
+			<li class="my-5">
+				<a href="/about" onclick={closeMenu}>About</a>
 			</li>
 		</ul>
 	</nav>
