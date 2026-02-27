@@ -74,6 +74,9 @@
 			<li class="my-5">
 				<a href="/eggnog" onclick={closeMenu}>Eggnog Leg Jog</a>
 			</li>
+			<li class="my-5">
+				<a href="/about" onclick={closeMenu}>About</a>
+			</li>
 		</ul>
 	</nav>
 </AppBar>
@@ -99,10 +102,13 @@
 		<a class="item-center mt-1 flex" href="/slice-a-thon">Slice-a-thon</a>
 		<a class="item-center mt-1 flex" href="/taco-ocho">Taco Ocho</a>
 		<a class="item-center mt-1 flex" href="/eggnog">Eggnog Leg Jog</a>
+		<a class="item-center mt-1 flex" href="/about">About</a>
 	</div>
 	<div class="col-span-1 mt-4 md:mt-0">
 		<div class="text-lg font-bold">More</div>
 		<a class="item-center mt-1 flex" href="/about">About</a>
 		<a class="item-center mt-1 flex" href="mailto:slice.enterprise.seattle@gmail.com">Contact Us</a>
 	</div>
+
+	<!-- Signing off -->
 </footer>
