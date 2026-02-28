@@ -7,7 +7,6 @@
 		script.src = 'https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js';
 		script.onload = () => {
 			if (window && 'jotformEmbedHandler' in window) {
-				// @ts-ignore
 				window.jotformEmbedHandler(`iframe[id='${iframeId}']`, 'https://form.jotform.com/');
 			}
 		};

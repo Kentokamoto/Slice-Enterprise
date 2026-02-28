@@ -11,7 +11,6 @@
 		UtensilsIcon
 	} from '@lucide/svelte';
 	import PizzaBackground from '$lib/components/pizza-background.svelte';
-	import Image from '$lib/components/Image.svelte';
 </script>
 
 <svelte:head>
@@ -22,10 +21,10 @@
 <PizzaBackground />
 <!-- Hero Section -->
 <section class="relative flex h-[60vh] items-center justify-center overflow-hidden md:h-[70vh]">
-	<Image
+	<img
 		class="absolute inset-0 h-full w-full object-cover"
-		description="slice-a-thon 2025 attendees"
-		url={sliceAThonGroupPhoto}
+		alt="slice-a-thon 2025 attendees"
+		src={sliceAThonGroupPhoto}
 	/>
 	<div class="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-black/60"></div>
 	<div class="relative z-10 max-w-4xl px-4 text-center text-white">
@@ -58,11 +57,7 @@
 		>
 			<div class="relative overflow-hidden">
 				<header class="relative">
-					<Image
-						class="h-full w-full object-cover"
-						url={sliceAThonPreview}
-						description="slice-a-thon example"
-					/>
+					<img src={sliceAThonPreview} class="h-full w-full object-cover" alt="banner" />
 				</header>
 				<div class="m-3">
 					<div>
@@ -101,11 +96,7 @@
 		>
 			<div class="relative overflow-hidden">
 				<header class="relative">
-					<Image
-						class="h-full w-full object-cover"
-						url={tacoOchoGroupPhoto}
-						description="2025 Taco Ocho attendees"
-					/>
+					<img src={tacoOchoGroupPhoto} class="h-full w-full object-cover" alt="banner" />
 				</header>
 				<div class="m-3">
 					<div>
@@ -141,11 +132,7 @@
 		>
 			<div class="relative overflow-hidden">
 				<header class="relative">
-					<Image
-						class="h-full w-full object-cover"
-						url={eggnogLegJogGroupPhoto}
-						description="2025 Eggnog Leg Jog group getting pre-race announcements"
-					/>
+					<img src={eggnogLegJogGroupPhoto} class="h-full w-full object-cover" alt="banner" />
 				</header>
 				<div class="m-3">
 					<div>

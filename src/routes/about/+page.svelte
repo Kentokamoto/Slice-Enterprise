@@ -1,6 +1,5 @@
-<script lang="ts">
+<script>
 	import partOfSliceMembers from '$lib/assets/part-of-slice-members.webp';
-	import Image from '$lib/components/Image.svelte';
 </script>
 
 <svelte:head>
@@ -10,10 +9,10 @@
 
 <div class="bg-crust flex min-h-screen flex-col items-center-safe">
 	<section class="m-9 flex flex-col justify-center lg:max-w-300 lg:flex-row">
-		<Image
+		<img
 			class=" mr-8 mb-4 w-full object-cover lg:mb-0 lg:h-100"
-			description="Part of slice enterprise founders"
-			url={partOfSliceMembers}
+			alt="Part of slice enterprise founders"
+			src={partOfSliceMembers}
 		/>
 		<div class="space-y-4">
 			<h1 class="text-red-sauce text-2xl font-bold">A Match Made in Heaven</h1>
