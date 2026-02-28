@@ -22,6 +22,7 @@
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	import Image from '$lib/components/Image.svelte';
 	// Vercel Metrics and Monitoring
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 	injectSpeedInsights();
@@ -35,11 +36,12 @@
 				class="text-red-sauce font-display flex items-center text-3xl leading-tight font-bold md:text-2xl"
 				onclick={closeMenu}
 			>
-				<img
+				<Image
 					class="m-4 w-8 flex-none place-content-center object-scale-down"
-					src={mascotThumb}
-					alt="slice enterprise mascot"
+					url={mascotThumb}
+					description="slice enterprise mascot"
 				/>
+
 				Slice Enterprise
 			</a>
 		</AppBar.Lead>
