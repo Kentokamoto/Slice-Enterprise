@@ -2,4 +2,7 @@
   "bunVersion": "1.x",
   "installCommand": "bun install",
   "buildCommand": "bun run build"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
