@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="bg-crust flex min-h-screen flex-col items-center-safe">
-	<section class="m-9 flex flex-col justify-center lg:w-300 lg:flex-row">
+	<section class="m-9 flex flex-col justify-center lg:max-w-300 lg:flex-row">
 		<img
 			class=" mr-8 mb-4 w-full object-cover lg:mb-0 lg:h-100"
 			alt="Part of slice enterprise founders"
