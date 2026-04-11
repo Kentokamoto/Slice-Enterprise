@@ -201,6 +201,7 @@
 					</h3>
 					<Accordion.ItemContent class="pr-2">Yes</Accordion.ItemContent>
 				</Accordion.Item>
+				<hr class="hr border-black" />
 				<Accordion.Item value="Eat pizza">
 					<h3>
 						<Accordion.ItemTrigger class="flex items-center justify-between"
@@ -213,6 +214,74 @@
 						</Accordion.ItemTrigger>
 					</h3>
 					<Accordion.ItemContent class="pr-2">Yes</Accordion.ItemContent>
+				</Accordion.Item>
+				<hr class="hr border-black" />
+				<Accordion.Item value="payments">
+					<h3>
+						<Accordion.ItemTrigger class="flex items-center justify-between"
+							>What do I need to pay for?
+							<Accordion.ItemIndicator class="group">
+								<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
+								<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
+							</Accordion.ItemIndicator>
+						</Accordion.ItemTrigger>
+					</h3>
+					<Accordion.ItemContent class="pr-2">
+						You'll need to pay for the slice of pizza at each checkpoint. Each slice averages out to
+						about $4.50.
+					</Accordion.ItemContent>
+				</Accordion.Item>
+
+				<hr class="hr border-black" />
+				<Accordion.Item value="aid stations">
+					<h3>
+						<Accordion.ItemTrigger class="flex items-center justify-between"
+							>Will there be aid stations?
+							<Accordion.ItemIndicator class="group">
+								<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
+								<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
+							</Accordion.ItemIndicator>
+						</Accordion.ItemTrigger>
+					</h3>
+					<Accordion.ItemContent class="pr-2">
+						No, we encourage people to bring their own water and will mark locations along the route
+						where people can use restrooms or find refreshments
+					</Accordion.ItemContent>
+				</Accordion.Item>
+				<Accordion.Item value="course markings">
+					<hr class="hr border-black" />
+					<h3>
+						<Accordion.ItemTrigger class="flex items-center justify-between"
+							>Will there be course markings?
+							<Accordion.ItemIndicator class="group">
+								<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
+								<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
+							</Accordion.ItemIndicator>
+						</Accordion.ItemTrigger>
+					</h3>
+					<Accordion.ItemContent class="pr-2">
+						No. We recommend downloading the route onto your phone or watch to avoid getting lost.
+						We will also have several runners at different speeds familiar with the route who can
+						help guide the way. You can download the route here:
+					</Accordion.ItemContent>
+				</Accordion.Item>
+				<hr class="hr border-black" />
+
+				<Accordion.Item value="can't make race">
+					<h3>
+						<Accordion.ItemTrigger class="flex items-center justify-between"
+							>I can't make the race, what should I do?
+							<Accordion.ItemIndicator class="group">
+								<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
+								<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
+							</Accordion.ItemIndicator>
+						</Accordion.ItemTrigger>
+					</h3>
+					<Accordion.ItemContent class="pr-2">
+						No problem, please just send us an email at <a
+							href="mailto:slice.enterprise.seattle@gmail.com">slice.enterprise.seattle@gmail.com</a
+						> to let us know you won't be joining so we can adjust our pizza orders accordingly!
+					</Accordion.ItemContent>
 				</Accordion.Item>
 			</Accordion>
 		</Tabs.Content>
