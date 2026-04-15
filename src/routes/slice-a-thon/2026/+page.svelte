@@ -1,68 +1,21 @@
 <script lang="ts">
-	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import Counter from '$lib/components/legacy/Counter.svelte';
 	import Registration from '$lib/components/legacy/Registration.svelte';
 	import {
-		AlertCircleIcon,
 		CalendarFoldIcon,
 		FlagIcon,
-		MinusIcon,
 		PizzaIcon,
-		PlusIcon,
 		RulerDimensionLineIcon,
 		ClockIcon
 	} from '@lucide/svelte';
 	import { Tabs } from '@skeletonlabs/skeleton-svelte';
-
-	type FaqLink = { href: string; label: string };
-	type FaqAnswerSegment = string | FaqLink;
-	type FaqItem = { value: string; question: string; segments: FaqAnswerSegment[] };
+	import Faq2026 from './Components/faq_2026.svelte';
+	import Stops2026 from './Components/stops_2026.svelte';
+	import Route2026 from './Components/route_2026.svelte';
 
 	const eventDate = new Date('May 16, 2026 4:00 PM PDT');
 	let tabValue = 'overview';
 
-	const faqItems: FaqItem[] = [
-		{ value: 'real-race', question: 'Is this a real race?', segments: ['Yes'] },
-		{ value: 'eat-pizza', question: 'Do I have to eat pizza?', segments: ['Yes'] },
-		{
-			value: 'payments',
-			question: 'What do I need to pay for?',
-			segments: [
-				"You'll need to pay for the slice of pizza at each checkpoint. " +
-					'Each slice averages out to about $4.50.'
-			]
-		},
-		{
-			value: 'aid-stations',
-			question: 'Will there be aid stations?',
-			segments: [
-				'No, we encourage people to bring their own water and will mark locations along ' +
-					'the route where people can use restrooms or find refreshments'
-			]
-		},
-		{
-			value: 'course-markings',
-			question: 'Will there be course markings?',
-			segments: [
-				'No. We recommend downloading the route onto your phone or watch to avoid getting' +
-					' lost. We will also have several runners at different speeds familiar with ' +
-					'the route who can help guide the way. You can download the route here:'
-			]
-		},
-		{
-			value: 'cant-make-race',
-			question: "I can't make the race, what should I do?",
-			segments: [
-				'No problem, please just send us an email at ',
-				{
-					href: 'mailto:slice.enterprise.seattle@gmail.com',
-					label: 'slice.enterprise.seattle@gmail.com'
-				},
-				" to let us know you won't be joining so we can adjust our pizza orders",
-				' accordingly!'
-			]
-		}
-	];
 </script>
 
 <svelte:head>
@@ -157,116 +110,13 @@
 			</div>
 		</Tabs.Content>
 		<Tabs.Content value="route">
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
-				<div class="text-center font-bold sm:p-4">
-					<h1 class="text-lg">Half Marathon Route</h1>
-					<div class="text-red-sauce flex gap-2">
-						<AlertCircleIcon />
-						<p>Route subject to change</p>
-					</div>
-					<div
-						class="strava-embed-placeholder"
-						data-embed-type="route"
-						data-embed-id="3445596670059233086"
-						data-full-width="true"
-						data-style="standard"
-						data-map-hash="11.08/47.6303/-122.3272"
-						data-from-embed="true"
-					></div>
-				</div>
-				<div class="text-center font-bold sm:p-4">
-					<h1 class="text-lg">10k Route</h1>
-					<div class="text-red-sauce flex gap-2">
-						<AlertCircleIcon />
-						<p class="text-red-sauce">Route subject to change</p>
-					</div>
-					<div
-						class="strava-embed-placeholder"
-						data-embed-type="route"
-						data-embed-id="3460125985862464372"
-						data-full-width="true"
-						data-style="standard"
-						data-map-hash="11.3/47.6276/-122.3427"
-						data-from-embed="true"
-					></div>
-					<script src="https://strava-embeds.com/embed.js"></script>
-				</div>
-			</div>
+			<Route2026/>
 		</Tabs.Content>
 		<Tabs.Content value="stops">
-			<div class="font-light pb-4">
-				Note: The Pagliacci locations for the Half Marathon and 10k are different
-			</div>
-			<div class="space-y-4">
-				<div class="mb-4 flex items-center gap-2">
-					<div class="rounded-full bg-orange-200 px-3 py-1 text-sm font-semibold text-orange-700">
-						Half Marathon
-					</div>
-				</div>
-				<div class="border-l-4 border-orange-500 pl-4">
-					<h4 class="text-lg font-semibold">
-						<a href="https://maps.app.goo.gl/Rha8MT6t1as79ZJt7">Pagliacci's on Madison</a>
-					</h4>
-				</div>
-				<div class="border-l-4 border-orange-500 pl-4">
-					<h4 class="text-lg font-semibold">
-						<a href="https://maps.app.goo.gl/UvW54K21xEH6Eede7">Post Alley Pizza</a>
-					</h4>
-				</div>
-				<div class="border-l-4 border-orange-500 pl-4">
-					<h4 class="text-lg font-semibold">
-						<a href="https://maps.app.goo.gl/uPkZTgtqWMLv2BfY6">Tivoli's</a>
-					</h4>
-				</div>
-			</div>
-
-			<div class="mt-8 space-y-4">
-				<div class="mb-4 flex items-center gap-2">
-					<div class="rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-700">
-						10K
-					</div>
-				</div>
-				<div class="border-l-4 border-blue-700 pl-4">
-					<h4 class="text-lg font-semibold">
-						<a href="https://maps.app.goo.gl/QrjQvzbYc2knpVr2A">Pagliacci's on Miller</a>
-					</h4>
-				</div>
-				<div class="border-l-4 border-blue-700 pl-4">
-					<h4 class="text-lg font-semibold">
-						<a href="https://maps.app.goo.gl/uPkZTgtqWMLv2BfY6">Tivoli's</a>
-					</h4>
-				</div>
-			</div>
-
+			<Stops2026/>
 		</Tabs.Content>
 		<Tabs.Content value="faq">
-			<Accordion multiple class="sm:text-md text-xl">
-				{#each faqItems as item, i (item.value)}
-					{#if i > 0}
-						<hr class="hr border-black" />
-					{/if}
-					<Accordion.Item value={item.value}>
-						<h3>
-							<Accordion.ItemTrigger class="flex items-center justify-between">
-								{item.question}
-								<Accordion.ItemIndicator class="group">
-									<MinusIcon class="hidden size-4 group-data-[state=open]:block" />
-									<PlusIcon class="block size-4 group-data-[state=open]:hidden" />
-								</Accordion.ItemIndicator>
-							</Accordion.ItemTrigger>
-						</h3>
-						<Accordion.ItemContent class="pr-2">
-							{#each item.segments as seg, j (j)}
-								{#if typeof seg === 'string'}
-									{seg}
-								{:else}
-									<a class="text-red-sauce" href={seg.href}>{seg.label}</a>
-								{/if}
-							{/each}
-						</Accordion.ItemContent>
-					</Accordion.Item>
-				{/each}
-			</Accordion>
+			<Faq2026/>
 		</Tabs.Content>
 	</Tabs>
 </div>
