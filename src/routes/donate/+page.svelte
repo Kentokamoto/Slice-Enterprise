@@ -10,7 +10,7 @@
 	<title>Slice Enterprises | Donate</title>
 	<meta name="description" content="When running and our love for pizza met in the middle." />
 </svelte:head>
-<PizzaBackground />
+<!-- <PizzaBackground /> -->
 <section class="relative flex h-[60vh] items-center justify-center overflow-hidden md:h-[80vh]">
 	<img
 		class="absolute inset-0 h-full w-full object-cover"

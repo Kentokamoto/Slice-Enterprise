@@ -5,7 +5,7 @@
 	import PizzaBackground from '../../lib/components/pizza-background.svelte';
 </script>
 
-<PizzaBackground />
+<!-- <PizzaBackground /> -->
 
 {@render children()}
 

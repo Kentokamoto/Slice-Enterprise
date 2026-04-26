@@ -89,7 +89,7 @@
 		</ul>
 	</nav>
 </AppBar>
-<main class="flex-1">
+<main class="flex-1 bg-crust">
 	{@render children()}
 </main>
 
