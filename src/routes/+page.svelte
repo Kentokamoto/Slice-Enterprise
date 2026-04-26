@@ -28,7 +28,7 @@
 	/>
 	<div class="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-black/60"></div>
 	<div class="relative z-10 max-w-4xl px-4 text-center text-white">
-		<h1 class="mb-4 text-4xl font-bold md:mb-6 md:text-6xl">Run. Eat. Repeat.</h1>
+		<h1 class="mb-4 text-4xl font-bold md:mb-6 md:text-6xl">Crust or Bust.</h1>
 		<p class="mb-6 text-lg text-gray-100 md:mb-8 md:text-2xl">Now that's amore!</p>
 		<div class="flex flex-col justify-center gap-4 sm:flex-row">
 			<a href="/slice-a-thon">
