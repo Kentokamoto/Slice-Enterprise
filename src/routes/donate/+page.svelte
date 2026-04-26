@@ -25,7 +25,7 @@
 			Everyone deserves a chance to fly
 		</p>
 		<div class="flex flex-col justify-center gap-4 sm:flex-row">
-			<a href="/about">
+			<a href="https://venmo.com/u/free2flyrc">
 				<button
 					class="w-full rounded-xl border-white bg-orange-400 py-2 font-semibold text-white hover:shadow-lg sm:w-2xs"
 				>
