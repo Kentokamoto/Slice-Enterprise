@@ -44,16 +44,17 @@
 			</a>
 		</AppBar.Lead>
 		<AppBar.Trail class="items-center justify-end">
-			<div class="text-red-sauce/80 hidden gap-4 text-md lg:text-xl font-semibold md:flex">
+			<div class="text-red-sauce/80 hidden gap-4 text-md lg:text-xl font-semibold lg:flex">
 				<a href="/slice-a-thon">Slice-a-thon</a>
 				<a href="/taco-ocho">Taco Ocho</a>
 				<a href="/eggnog">Eggnog Leg Jog</a>
 				<a href="/donate">Donate</a>
+				<a href="https://slice-enterprises.printful.me/">Shop</a>
 				<a href="/about">About</a>
 			</div>
 			<button
 				type="button"
-				class="btn-icon btn-icon-lg hover:preset-tonal md:hidden"
+				class="btn-icon btn-icon-lg hover:preset-tonal lg:hidden"
 				onclick={toggleMenu}
 			>
 				<MenuIcon class="text-red-sauce font-semibold" />
@@ -62,7 +63,7 @@
 	</AppBar.Toolbar>
 	<!--  Mobile Nav Bar -->
 	<nav
-		class="bg-crust fixed inset-x-0 top-25 bottom-0 z-[100] p-5 md:hidden"
+		class="bg-crust fixed inset-x-0 top-25 bottom-0 z-[100] p-5 lg:hidden"
 		class:hidden={!isMenuOpen}
 		aria-hidden={!isMenuOpen}
 	>
@@ -78,6 +79,9 @@
 			</li>
 			<li class="my-5">
 				<a href="/donate" onclick={closeMenu}>Donate</a>
+			</li>
+			<li class="my-5">
+				<a href="https://slice-enterprises.printful.me/">Shop</a>
 			</li>
 			<li class="my-5">
 				<a href="/about" onclick={closeMenu}>About</a>
@@ -111,12 +115,13 @@
 		<a class="item-center mt-1 flex" href="/slice-a-thon">Slice-a-thon</a>
 		<a class="item-center mt-1 flex" href="/taco-ocho">Taco Ocho</a>
 		<a class="item-center mt-1 flex" href="/eggnog">Eggnog Leg Jog</a>
-		<a class="item-center mt-1 flex" href="/donate">Donate</a>
 		<a class="item-center mt-1 flex" href="/about">About</a>
 	</div>
 	<div class="col-span-1 mt-4 md:mt-0">
 		<div class="text-lg font-bold">More</div>
 		<a class="item-center mt-1 flex" href="/about">About</a>
+		<a class="item-center mt-1 flex" href="/donate">Donate</a>
+		<a href="https://slice-enterprises.printful.me/">Shop</a>
 		<a class="item-center mt-1 flex" href="mailto:slice.enterprise.seattle@gmail.com">Contact Us</a>
 	</div>
 

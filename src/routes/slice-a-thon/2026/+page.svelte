@@ -84,6 +84,22 @@
 		</div>
 	</a>
 </div>
+
+<div class="mt-6 max-w-full mx-5">
+	<a href="https://slice-enterprises.printful.me/" target="_blank" rel="noopener" class="block">
+		<div
+			class="flex text-white rounded-2xl py-7 px-5 flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-600 hover:to-blue-950 transition-all cursor-pointer border-none"
+		>
+			<div>
+				<p class="font-extrabold text-2xl">Get your Slice-a-thon Gear!</p>
+
+				<p class="font-semibold text-md">T-shirts, hats, and more now available now</p>
+			</div>
+			<button class="bg-white text-blue-900 p-3 rounded-lg font-semibold"> Shop merch → </button>
+		</div>
+	</a>
+</div>
+
 <div class="glass-strong m-3 min-h-[30vh] rounded-2xl border border-black/10 p-3 shadow-md">
 	<Tabs
 		value={tabValue}
