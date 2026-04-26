@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>Slice Enterprise</title>
+	<title>Slice Enterprises</title>
 	<meta name="description" content="When running and food meet and grab a bite in Seattle" />
 </svelte:head>
 

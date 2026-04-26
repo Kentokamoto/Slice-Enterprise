@@ -32,22 +32,23 @@
 		<AppBar.Lead>
 			<a
 				href="/"
-				class="text-red-sauce font-display flex items-center text-3xl leading-tight font-bold md:text-2xl"
+				class="text-red-sauce font-display flex items-center text-3xl leading-tight font-bold lg:text-2xl"
 				onclick={closeMenu}
 			>
 				<img
 					class="m-4 w-8 flex-none place-content-center object-scale-down"
 					src={mascotThumb}
-					alt="slice enterprise mascot"
+					alt="slice enterprises mascot"
 				/>
-				Slice Enterprise
+				Slice Enterprises
 			</a>
 		</AppBar.Lead>
 		<AppBar.Trail class="items-center justify-end">
-			<div class="text-red-sauce/80 hidden gap-4 text-xl font-semibold md:flex">
+			<div class="text-red-sauce/80 hidden gap-4 text-md lg:text-xl font-semibold md:flex">
 				<a href="/slice-a-thon">Slice-a-thon</a>
 				<a href="/taco-ocho">Taco Ocho</a>
 				<a href="/eggnog">Eggnog Leg Jog</a>
+				<a href="/donate">Donate</a>
 				<a href="/about">About</a>
 			</div>
 			<button
@@ -76,6 +77,9 @@
 				<a href="/eggnog" onclick={closeMenu}>Eggnog Leg Jog</a>
 			</li>
 			<li class="my-5">
+				<a href="/donate" onclick={closeMenu}>Donate</a>
+			</li>
+			<li class="my-5">
 				<a href="/about" onclick={closeMenu}>About</a>
 			</li>
 		</ul>
@@ -88,12 +92,16 @@
 <!-- Footer -->
 <footer class=" grid grid-cols-1 gap-4 bg-orange-300 p-5 md:grid-cols-4">
 	<div class="col-span-1 md:col-span-2">
-		<div class="text-lg font-bold">Slice Enterprise</div>
+		<div class="text-lg font-bold">Slice Enterprises</div>
 		<p class="text-gray-900">
 			When running races meets food for the ultimate gastrointestinal challenge
 		</p>
 
-		<a class="item-center my-4 flex gap-2" href="https://www.instagram.com/slice_enterprises/">
+		<a
+			class="item-center my-4 flex gap-2"
+			data-outbound="slice enterprises instagrarnm"
+			href="https://www.instagram.com/slice_enterprises/"
+		>
 			<InstagramIcon />@slice_enterprises</a
 		>
 	</div>
@@ -103,6 +111,7 @@
 		<a class="item-center mt-1 flex" href="/slice-a-thon">Slice-a-thon</a>
 		<a class="item-center mt-1 flex" href="/taco-ocho">Taco Ocho</a>
 		<a class="item-center mt-1 flex" href="/eggnog">Eggnog Leg Jog</a>
+		<a class="item-center mt-1 flex" href="/donate">Donate</a>
 		<a class="item-center mt-1 flex" href="/about">About</a>
 	</div>
 	<div class="col-span-1 mt-4 md:mt-0">

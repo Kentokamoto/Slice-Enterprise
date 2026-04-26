@@ -15,7 +15,6 @@
 
 	const eventDate = new Date('May 16, 2026 4:00 PM PDT');
 	let tabValue = 'overview';
-
 </script>
 
 <svelte:head>
@@ -69,6 +68,22 @@
 	</div>
 	<div class="mt-2">3</div>
 </div>
+<div class="mt-6 max-w-full mx-5">
+	<a href="/donate" target="_blank" rel="noopener" class="block">
+		<div
+			class="flex text-white rounded-2xl py-7 px-5 flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-orange-600 to-red-sauce hover:from-orange-600 hover:to-red-sauce transition-all cursor-pointer border-none"
+		>
+			<div>
+				<p class="font-extrabold text-2xl">Donate to Free2Fly!</p>
+
+				<p class="font-semibold text-md">Help visually-impaired athletes in our community</p>
+			</div>
+			<button class="bg-white text-red-sauce p-3 rounded-lg font-semibold">
+				Learn More & Donate →
+			</button>
+		</div>
+	</a>
+</div>
 <div class="glass-strong m-3 min-h-[30vh] rounded-2xl border border-black/10 p-3 shadow-md">
 	<Tabs
 		value={tabValue}
@@ -110,13 +125,13 @@
 			</div>
 		</Tabs.Content>
 		<Tabs.Content value="route">
-			<Route2026/>
+			<Route2026 />
 		</Tabs.Content>
 		<Tabs.Content value="stops">
-			<Stops2026/>
+			<Stops2026 />
 		</Tabs.Content>
 		<Tabs.Content value="faq">
-			<Faq2026/>
+			<Faq2026 />
 		</Tabs.Content>
 	</Tabs>
 </div>
