@@ -71,7 +71,7 @@
 <div class="mt-6 max-w-full mx-5">
 	<a href="/donate" target="_blank" rel="noopener" class="block">
 		<div
-			class="flex text-white rounded-2xl py-7 px-5 flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-orange-600 to-red-sauce hover:from-orange-600 hover:to-red-sauce transition-all cursor-pointer border-none"
+			class="flex text-white rounded-2xl py-7 px-5 flex-col sm:flex-row items-center justify-between gap-4 bg-linear-to-r from-orange-600 to-red-sauce hover:from-orange-600 hover:to-red-sauce transition-all cursor-pointer border-none"
 		>
 			<div>
 				<p class="font-extrabold text-2xl">Donate to Free2Fly!</p>
@@ -88,7 +88,7 @@
 <div class="mt-6 max-w-full mx-5">
 	<a href="https://slice-enterprises.printful.me/" target="_blank" rel="noopener" class="block">
 		<div
-			class="flex text-white rounded-2xl py-7 px-5 flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-600 hover:to-blue-950 transition-all cursor-pointer border-none"
+			class="flex text-white rounded-2xl py-7 px-5 flex-col sm:flex-row items-center justify-between gap-4 bg-linear-to-r from-blue-500 to-blue-900 hover:from-blue-600 hover:to-blue-950 transition-all cursor-pointer border-none"
 		>
 			<div>
 				<p class="font-extrabold text-2xl">Get your Slice-a-thon Gear!</p>

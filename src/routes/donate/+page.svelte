@@ -2,13 +2,12 @@
 	import free2fly_group from '$lib/assets/free2fly_group_1.webp';
 	import free2fly_group_2 from '$lib/assets/free2fly_group_2.webp';
 	import runner_and_guide from '$lib/assets/runner_and_guide.webp';
-	import PizzaBackground from '$lib/components/pizza-background.svelte';
 	import { InstagramIcon } from '@lucide/svelte';
 </script>
 
 <svelte:head>
 	<title>Slice Enterprises | Donate</title>
-	<meta name="description" content="When running and our love for pizza met in the middle." />
+	<meta name="description" content="Slice Enterprises Donation Partner" />
 </svelte:head>
 <!-- <PizzaBackground /> -->
 <section class="relative flex h-[60vh] items-center justify-center overflow-hidden md:h-[80vh]">
