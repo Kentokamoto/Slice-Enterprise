@@ -9,9 +9,9 @@ import {
 } from 'lucide-react';
 import Counter from '~/lib/components/legacy/Counter';
 import Registration from '~/lib/components/legacy/Registration';
-import Faq2026 from './slice-a-thon.2026/Faq2026';
-import Route2026 from './slice-a-thon.2026/Route2026';
-import Stops2026 from './slice-a-thon.2026/Stops2026';
+import Faq2026 from './2026/Faq2026';
+import Route2026 from './2026/Route2026';
+import Stops2026 from './2026/Stops2026';
 
 export const meta: MetaFunction = () => [
 	{ title: 'Seattle Slice-a-Thon 2026' },
