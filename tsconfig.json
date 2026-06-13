@@ -1,19 +1,24 @@
 {
-	"extends": "./.svelte-kit/tsconfig.json",
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		".react-router/types/**/*"
+	],
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"types": ["vite/client"],
+		"isolatedModules": true,
 		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
+		"target": "ES2022",
 		"strict": true,
-		"moduleResolution": "bundler"
+		"allowJs": true,
+		"skipLibCheck": true,
+		"paths": {
+			"~/*": ["./src/*"]
+		}
 	}
-	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
-	// except $lib which is handled by https://svelte.dev/docs/kit/configuration#files
-	//
-	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
-	// from the referenced tsconfig.json - TypeScript does not merge them in
 }
