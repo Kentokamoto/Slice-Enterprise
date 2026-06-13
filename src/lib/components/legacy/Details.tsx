@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 interface Props {
 	eventDate: Date;
 	eventLocation: string;
@@ -7,13 +5,6 @@ interface Props {
 }
 
 export default function Details({ eventDate, eventLocation, children }: Props) {
-	useEffect(() => {
-		if (document.querySelector('script[src="https://strava-embeds.com/embed.js"]')) return;
-		const script = document.createElement('script');
-		script.src = 'https://strava-embeds.com/embed.js';
-		document.body.appendChild(script);
-	}, []);
-
 	return (
 		<div className="mt-4 flex flex-col place-content-center sm:flex-row">
 			<section className="flex flex-3 basis-full flex-col place-content-center">

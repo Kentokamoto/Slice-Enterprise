@@ -24,6 +24,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 					crossOrigin="anonymous"
 					async
 				></script>
+				<script src="https://strava-embeds.com/embed.js" async></script>
 				<Meta />
 				<Links />
 			</head>

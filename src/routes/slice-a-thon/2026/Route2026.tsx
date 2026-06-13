@@ -1,13 +1,4 @@
-import { useEffect } from 'react';
-
 export default function Route2026() {
-	useEffect(() => {
-		if (document.querySelector('script[src="https://strava-embeds.com/embed.js"]')) return;
-		const script = document.createElement('script');
-		script.src = 'https://strava-embeds.com/embed.js';
-		document.body.appendChild(script);
-	}, []);
-
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
 			<div className="text-center font-bold sm:p-4">
