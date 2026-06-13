@@ -1,3 +1,5 @@
-export default function Page() {
-	return null;
+import { Navigate } from 'react-router';
+
+export default function TacoOcho() {
+	return <Navigate to="/taco-ocho/2025" replace />;
 }
