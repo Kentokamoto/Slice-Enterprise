@@ -5,7 +5,7 @@ import {
 	ClockIcon,
 	FlagIcon,
 	PizzaIcon,
-	RulerDimensionLineIcon
+	Ruler
 } from 'lucide-react';
 import Counter from '~/lib/components/legacy/Counter';
 import Registration from '~/lib/components/legacy/Registration';
@@ -47,7 +47,7 @@ export default function SliceAThon2026() {
 					{ icon: <ClockIcon />, label: 'Time', value: '4:00 PM PDT' },
 					{ icon: <FlagIcon />, label: 'Location', value: 'Gasworks Park' },
 					{
-						icon: <RulerDimensionLineIcon />,
+						icon: <Ruler />,
 						label: 'Distance',
 						value: 'Half Marathon (13.1 miles) and 10km'
 					}

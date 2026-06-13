@@ -3,7 +3,7 @@ import {
 	CroissantIcon,
 	FlagIcon,
 	PizzaIcon,
-	RulerDimensionLineIcon,
+	Ruler,
 	UtensilsIcon
 } from 'lucide-react';
 import sliceAThonGroupPhoto from '~/lib/assets/slice-a-thon_group_photo.webp?inline';
@@ -61,7 +61,7 @@ export default function Home() {
 								</div>
 								<div className="mt-4 mb-4 space-y-2">
 									<div className="flex items-center gap-2 text-gray-700">
-										<RulerDimensionLineIcon /> <span>10k and half marathon</span>
+										<Ruler /> <span>10k and half marathon</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
 										<PizzaIcon /><span>3 pizza spots</span>
@@ -90,7 +90,7 @@ export default function Home() {
 								</div>
 								<div className="mt-4 mb-4 space-y-2">
 									<div className="flex items-center gap-2 text-gray-700">
-										<RulerDimensionLineIcon /> <span>8 miles</span>
+										<Ruler /> <span>8 miles</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
 										<UtensilsIcon /><span>3 taco locations</span>
@@ -121,7 +121,7 @@ export default function Home() {
 								</div>
 								<div className="mt-4 mb-4 space-y-2">
 									<div className="flex items-center gap-2 text-gray-700">
-										<RulerDimensionLineIcon /> <span>10k</span>
+										<Ruler /> <span>10k</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
 										<CroissantIcon /><span>4 holiday stations</span>

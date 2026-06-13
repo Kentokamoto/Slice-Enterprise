@@ -17,7 +17,7 @@ Phase status:
 - Phase 3 (layout conversion): COMPLETE — nested race layouts with useLocation for active year tabs
 - Phase 4 (pages): COMPLETE — all 9 pages + 3 redirect routes converted
 - Phase 5 (legacy components): COMPLETE — all 7 legacy components + PizzaBackground + 2026 sub-components
-- Phase 6 (CSS + static build): TODO
+- Phase 6 (CSS + static build): COMPLETE — clean build, preview server 200 on all routes
 
 Key file locations:
 - `react-router.config.ts` — appDirectory: "src", ssr: false
