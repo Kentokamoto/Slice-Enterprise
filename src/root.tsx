@@ -1,5 +1,10 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
+import { type MetaFunction, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 import './app.css';
+
+export const meta: MetaFunction = () => [
+	{ title: 'Slice Enterprises' },
+	{ name: 'description', content: 'When running and food meet and grab a bite in Seattle' }
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
@@ -17,6 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<script
 					src="https://kit.fontawesome.com/5493abd9d4.js"
 					crossOrigin="anonymous"
+					async
 				></script>
 				<Meta />
 				<Links />

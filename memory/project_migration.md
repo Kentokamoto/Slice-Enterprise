@@ -13,7 +13,7 @@ Migrating slice-enterprise from SvelteKit to React Router 7 (framework mode, ssr
 
 Phase status:
 - Phase 1 (deps + tooling): COMPLETE — dev server returns 200
-- Phase 2 (app shell + routing): TODO — real root layout, nav, pages
+- Phase 2 (app shell + routing): COMPLETE — root.tsx shell, root-layout.tsx with nav+footer+analytics
 - Phase 3 (layout conversion): TODO
 - Phase 4 (pages): TODO
 - Phase 5 (legacy components): TODO
