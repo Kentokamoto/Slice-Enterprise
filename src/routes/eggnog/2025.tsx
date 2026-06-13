@@ -5,6 +5,7 @@ import Story from '~/lib/components/legacy/Story';
 import Details from '~/lib/components/legacy/Details';
 import FAQ from '~/lib/components/legacy/FAQ';
 import Registration from '~/lib/components/legacy/Registration';
+import StravaEmbed from '~/lib/components/StravaEmbed';
 
 export const meta: MetaFunction = () => [
 	{ title: '2025 Seattle Eggnog Leg Jog' },
@@ -94,14 +95,10 @@ export default function Eggnog2025() {
 					<div className="mx-10 w-4xl flex-col">
 						<Story storyParagraphs={storyParagraphs} storyTitle={storyTitle} />
 						<Details eventDate={eventDate} eventLocation={eventLocation}>
-							<div
-								className="strava-embed-placeholder"
-								data-embed-type="route"
-								data-embed-id="3406145129692623686"
-								data-style="standard"
-								data-map-hash="12.41/47.675/-122.34166"
-								data-from-embed="true"
-								data-token="8-hKOcRQCzeOHk4LSA8HXzcMuqVV3Ian_0tnjzI6KK4"
+							<StravaEmbed
+								embedId="3406145129692623686"
+								token="8-hKOcRQCzeOHk4LSA8HXzcMuqVV3Ian_0tnjzI6KK4"
+								mapHash="12.41/47.675/-122.34166"
 							/>
 						</Details>
 						<FAQ faqs={faqs} />
@@ -109,7 +106,6 @@ export default function Eggnog2025() {
 							<iframe
 								id={jotformIframeId}
 								title="2025 Eggnog Leg Jog Registration"
-								allowTransparency
 								src="https://form.jotform.com/252468546155161"
 								frameBorder="0"
 								style={{ border: 'none' }}

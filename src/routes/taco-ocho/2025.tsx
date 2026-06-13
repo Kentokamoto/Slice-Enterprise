@@ -5,6 +5,7 @@ import Story from '~/lib/components/legacy/Story';
 import Details from '~/lib/components/legacy/Details';
 import FAQ from '~/lib/components/legacy/FAQ';
 import Registration from '~/lib/components/legacy/Registration';
+import StravaEmbed from '~/lib/components/StravaEmbed';
 
 export const meta: MetaFunction = () => [
 	{ title: '2025 Seattle Taco Ocho' },
@@ -101,14 +102,10 @@ export default function TacoOcho2025() {
 					<div className="mx-10 w-4xl flex-col">
 						<Story storyTitle={storyTitle} storyParagraphs={storyParagraphs} />
 						<Details eventDate={eventDate} eventLocation={eventLocation}>
-							<div
-								className="strava-embed-placeholder"
-								data-embed-type="route"
-								data-embed-id="3365426768628971324"
-								data-style="standard"
-								data-map-hash="10.19/47.662/-122.3215"
-								data-from-embed="true"
-								data-token="gUCPOAVQtM_VZKfv6AhrHJ7DvNPZLsYuK7duL7qv7G0"
+							<StravaEmbed
+								embedId="3365426768628971324"
+								token="gUCPOAVQtM_VZKfv6AhrHJ7DvNPZLsYuK7duL7qv7G0"
+								mapHash="10.19/47.662/-122.3215"
 							/>
 						</Details>
 						<FAQ faqs={faqs} />
@@ -116,7 +113,6 @@ export default function TacoOcho2025() {
 							<iframe
 								id={jotformIframeId}
 								title="2025 Taco Ocho Registration"
-								allowTransparency
 								allow="geolocation; microphone; camera; fullscreen; payment"
 								src="https://form.jotform.com/251845910128154"
 								frameBorder="0"

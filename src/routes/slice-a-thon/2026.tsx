@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import { type MetaFunction, Link } from 'react-router';
-import {
-	CalendarFoldIcon,
-	ClockIcon,
-	FlagIcon,
-	PizzaIcon,
-	Ruler
-} from 'lucide-react';
+import { CalendarFoldIcon, ClockIcon, FlagIcon, PizzaIcon, Ruler } from 'lucide-react';
 import Counter from '~/lib/components/legacy/Counter';
 import Registration from '~/lib/components/legacy/Registration';
 import Faq2026 from './2026/Faq2026';
@@ -75,14 +69,14 @@ export default function SliceAThon2026() {
 
 			<div className="mx-5 mt-6 max-w-full">
 				<Link to="/donate" target="_blank" rel="noopener" className="block">
-					<div className="bg-linear-to-r from-orange-600 to-red-sauce hover:from-orange-600 hover:to-red-sauce flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl px-5 py-7 text-white transition-all sm:flex-row">
+					<div className="to-red-sauce hover:to-red-sauce flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-linear-to-r from-orange-600 px-5 py-7 text-white transition-all hover:from-orange-600 sm:flex-row">
 						<div>
 							<p className="text-2xl font-extrabold">Donate to Free2Fly!</p>
 							<p className="text-md font-semibold">
 								Help visually-impaired athletes in our community
 							</p>
 						</div>
-						<button className="bg-white text-red-sauce rounded-lg p-3 font-semibold">
+						<button className="text-red-sauce rounded-lg bg-white p-3 font-semibold">
 							Learn More &amp; Donate →
 						</button>
 					</div>
@@ -96,7 +90,7 @@ export default function SliceAThon2026() {
 					rel="noopener"
 					className="block"
 				>
-					<div className="bg-linear-to-r from-blue-500 to-blue-900 hover:from-blue-600 hover:to-blue-950 flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl px-5 py-7 text-white transition-all sm:flex-row">
+					<div className="flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-linear-to-r from-blue-500 to-blue-900 px-5 py-7 text-white transition-all hover:from-blue-600 hover:to-blue-950 sm:flex-row">
 						<div>
 							<p className="text-2xl font-extrabold">Get your Slice-a-thon Gear!</p>
 							<p className="text-md font-semibold">T-shirts, hats, and more now available now</p>
@@ -151,9 +145,9 @@ export default function SliceAThon2026() {
 							distance, but a 10k option as well making the race open to more people!
 						</p>
 						<p className="mt-1">
-							Runners will stop by 3 pizza spots (2 for the 10k option) for their choice of a
-							slice of 'za. Once you return to the finish line, there will be a final slice of pie
-							made by our volunteers to round out the race
+							Runners will stop by 3 pizza spots (2 for the 10k option) for their choice of a slice
+							of 'za. Once you return to the finish line, there will be a final slice of pie made by
+							our volunteers to round out the race
 						</p>
 					</div>
 				)}
@@ -168,7 +162,6 @@ export default function SliceAThon2026() {
 						<iframe
 							id="JotFormIFrame-260540870713151"
 							title="2026 Slice-A-Thon Registration"
-							allowTransparency
 							src="https://form.jotform.com/260540870713151"
 							frameBorder="0"
 							style={{ minWidth: '100%', maxWidth: '100%', border: 'none' }}

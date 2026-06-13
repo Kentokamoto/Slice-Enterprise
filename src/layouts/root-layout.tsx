@@ -31,7 +31,7 @@ export default function RootLayout() {
 	return (
 		<>
 			<header className="bg-crust relative z-50">
-				<div className="grid grid-cols-[3fr_1fr] items-center px-2 md:grid-cols-[1fr_2fr]">
+				<div className="grid h-16 grid-cols-[3fr_1fr] items-center px-2 md:grid-cols-[1fr_2fr]">
 					<Link
 						to="/"
 						className="font-display text-red-sauce flex items-center text-3xl font-bold leading-tight lg:text-2xl"
@@ -71,7 +71,7 @@ export default function RootLayout() {
 				</div>
 
 				<nav
-					className={`bg-crust fixed inset-x-0 bottom-0 top-25 z-[100] p-5 lg:hidden${isMenuOpen ? '' : ' hidden'}`}
+					className={`bg-crust fixed inset-x-0 bottom-0 top-16 z-[100] p-5 lg:hidden${isMenuOpen ? '' : ' hidden'}`}
 					aria-hidden={!isMenuOpen}
 				>
 					<ul className="text-red-sauce mr-2 text-right text-4xl font-semibold">

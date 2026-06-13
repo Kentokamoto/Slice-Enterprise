@@ -5,6 +5,7 @@ import Story from '~/lib/components/legacy/Story';
 import Details from '~/lib/components/legacy/Details';
 import FAQ from '~/lib/components/legacy/FAQ';
 import Registration from '~/lib/components/legacy/Registration';
+import StravaEmbed from '~/lib/components/StravaEmbed';
 
 export const meta: MetaFunction = () => [
 	{ title: 'Seattle Slice-a-Thon 2025' },
@@ -92,14 +93,10 @@ export default function SliceAThon2025() {
 					<div className="mx-10 w-4xl flex-col">
 						<Story storyParagraphs={storyParagraphs} storyTitle={storyTitle} />
 						<Details eventDate={eventDate} eventLocation={eventLocation}>
-							<div
-								className="strava-embed-placeholder"
-								data-embed-type="route"
-								data-embed-id="3356103777858949274"
-								data-style="standard"
-								data-map-hash="11.08/47.6303/-122.3237"
-								data-from-embed="true"
-								data-token="SaXWFP0cElSh4kXVBgUrw4ryeO56NjYqeLbapX_Im20"
+							<StravaEmbed
+								embedId="3356103777858949274"
+								token="SaXWFP0cElSh4kXVBgUrw4ryeO56NjYqeLbapX_Im20"
+								mapHash="11.08/47.6303/-122.3237"
 							/>
 						</Details>
 						<FAQ faqs={faqs} />
@@ -107,7 +104,6 @@ export default function SliceAThon2025() {
 							<iframe
 								id={jotformIframeId}
 								title="2025 Slice-A-Thon Registration"
-								allowTransparency
 								src="https://form.jotform.com/250816626970059"
 								frameBorder="0"
 								style={{ border: 'none' }}
