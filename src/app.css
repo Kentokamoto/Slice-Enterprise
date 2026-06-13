@@ -1,8 +1,5 @@
 @import 'tailwindcss';
 
-@import '@skeletonlabs/skeleton';
-@import '@skeletonlabs/skeleton-svelte';
-
 @theme {
     /* All colors below are legacy */
     --color-red-sauce: #b52a04;
@@ -49,11 +46,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-#app {
-    margin: 0 auto;
-    width: 100%;
 }
 
 summary::-webkit-details-marker {
