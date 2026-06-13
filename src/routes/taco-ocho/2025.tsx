@@ -32,10 +32,22 @@ const storyParagraphs = [
 ];
 
 const faqs = [
-	{ title: 'Is this a real race?', description: `We will have prizes for the first place finisher, and the first duo to complete the race. Beyond that, there is no wrong way to do the Taco Ocho, whether you want to go for an ocho mile PR, do a slow jog, or go for the classic ocho minutes per mile, it's all up to you` },
-	{ title: 'How many people are doing this?', description: `We are capping registration at 40 people. We expect between 20 and 40` },
-	{ title: 'Does this support charity?', description: `We request people donate $10 dollars to one of the following charities. Please place "taco ocho" in the memo line so we can pull the data later` },
-	{ title: 'How will I know the route?', description: `We will have several pacers who know the route` },
+	{
+		title: 'Is this a real race?',
+		description: `We will have prizes for the first place finisher, and the first duo to complete the race. Beyond that, there is no wrong way to do the Taco Ocho, whether you want to go for an ocho mile PR, do a slow jog, or go for the classic ocho minutes per mile, it's all up to you`
+	},
+	{
+		title: 'How many people are doing this?',
+		description: `We are capping registration at 40 people. We expect between 20 and 40`
+	},
+	{
+		title: 'Does this support charity?',
+		description: `We request people donate $10 dollars to one of the following charities. Please place "taco ocho" in the memo line so we can pull the data later`
+	},
+	{
+		title: 'How will I know the route?',
+		description: `We will have several pacers who know the route`
+	},
 	{
 		title: 'Where are we eating?',
 		description: `There will be 3 stops:
@@ -44,14 +56,32 @@ const faqs = [
                     and
                     <a href="https://maps.app.goo.gl/BUo9s1x6LPBKgqS17" class="text-red-sauce hover:text-red-700 underline">Oliveras Tacos</a>`
 	},
-	{ title: 'How many tacos do I have to eat?', description: `The official event is ocho tacos over the three locations. With a partner, the tacos can be spread amongst two people (cuatro & cuatro, cinco & tres, etc)` },
+	{
+		title: 'How many tacos do I have to eat?',
+		description: `The official event is ocho tacos over the three locations. With a partner, the tacos can be spread amongst two people (cuatro & cuatro, cinco & tres, etc)`
+	},
 	{ title: 'How much does a taco cost?', description: `Tacos cost around $3-4` },
 	{ title: 'Do they accept card?', description: `No. Only cash is accepted` },
-	{ title: "What if I don't want to eat all of the tacos?", description: `If the official taco count is too intimidating, trust your body. The Taco Ocho may be a chance for glory but it's ultimately for fun. The taco eating is only required if you want to win a prize` },
-	{ title: 'How will transportation work?', description: `We will end the race near the Capitol Hill light rail station, after which we expect most people to take the light rail back to Northgate` },
-	{ title: 'Can I invite my friends?', description: `Please do! We just ask that you have them register individually so we can have a headcount` },
-	{ title: 'Will there be lines at the Taco stands?', description: `It's very likely that you will wait in lines,` },
-	{ title: 'Will there be line dancing?', description: `It's highly likely some optional line dancing will be taking place` },
+	{
+		title: "What if I don't want to eat all of the tacos?",
+		description: `If the official taco count is too intimidating, trust your body. The Taco Ocho may be a chance for glory but it's ultimately for fun. The taco eating is only required if you want to win a prize`
+	},
+	{
+		title: 'How will transportation work?',
+		description: `We will end the race near the Capitol Hill light rail station, after which we expect most people to take the light rail back to Northgate`
+	},
+	{
+		title: 'Can I invite my friends?',
+		description: `Please do! We just ask that you have them register individually so we can have a headcount`
+	},
+	{
+		title: 'Will there be lines at the Taco stands?',
+		description: `It's very likely that you will wait in lines,`
+	},
+	{
+		title: 'Will there be line dancing?',
+		description: `It's highly likely some optional line dancing will be taking place`
+	},
 	{ title: 'Will I have fun?', description: `Yes` },
 	{ title: 'Is there a time limit?', description: `Cutoff for the 8 miles is 2.5 hours` },
 	{ title: 'Will there be vegetarian or vegan options?', description: `Yes` }
@@ -78,6 +108,7 @@ export default function TacoOcho2025() {
 								data-style="standard"
 								data-map-hash="10.19/47.662/-122.3215"
 								data-from-embed="true"
+								data-token="gUCPOAVQtM_VZKfv6AhrHJ7DvNPZLsYuK7duL7qv7G0"
 							/>
 						</Details>
 						<FAQ faqs={faqs} />
