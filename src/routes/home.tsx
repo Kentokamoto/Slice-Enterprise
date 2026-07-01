@@ -1,11 +1,5 @@
 import { type MetaFunction, Link } from 'react-router';
-import {
-	CroissantIcon,
-	FlagIcon,
-	PizzaIcon,
-	Ruler,
-	UtensilsIcon
-} from 'lucide-react';
+import { CroissantIcon, FlagIcon, PizzaIcon, Ruler, UtensilsIcon } from 'lucide-react';
 import sliceAThonGroupPhoto from '~/lib/assets/slice-a-thon_group_photo.webp?inline';
 import eggnogLegJogGroupPhoto from '~/lib/assets/eggnog-leg-jog-preview.webp';
 import tacoOchoGroupPhoto from '~/lib/assets/taco-ocho-preview.webp';
@@ -30,7 +24,7 @@ export default function Home() {
 					<h1 className="mb-4 text-4xl font-bold md:mb-6 md:text-6xl">Crust or Bust.</h1>
 					<p className="mb-6 text-lg text-gray-100 md:mb-8 md:text-2xl">Now that's amore!</p>
 					<div className="flex flex-col justify-center gap-4 sm:flex-row">
-						<Link to="/slice-a-thon">
+						<Link to="/taco-ocho">
 							<button className="w-full rounded-xl bg-orange-500/90 py-2 text-white hover:bg-orange-600 hover:shadow-lg sm:w-2xs">
 								View Our Next Run
 							</button>
@@ -56,7 +50,8 @@ export default function Home() {
 								<h2 className="h3">Slice-a-thon</h2>
 								<div className="h-10">
 									<p className="line-clamp-2 opacity-60">
-										The race that started it all. Run and eat pizza from some of Seattle's best pizza spots.
+										The race that started it all. Run and eat pizza from some of Seattle's best
+										pizza spots.
 									</p>
 								</div>
 								<div className="mt-4 mb-4 space-y-2">
@@ -64,13 +59,18 @@ export default function Home() {
 										<Ruler /> <span>10k and half marathon</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
-										<PizzaIcon /><span>3 pizza spots</span>
+										<PizzaIcon />
+										<span>3 pizza spots</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
-										<FlagIcon /><span>Gasworks Park</span>
+										<FlagIcon />
+										<span>Gasworks Park</span>
 									</div>
 								</div>
-								<Link className="flex w-full justify-center rounded-xl bg-amber-500" to="/slice-a-thon">
+								<Link
+									className="flex w-full justify-center rounded-xl bg-amber-500"
+									to="/slice-a-thon"
+								>
 									<button className="mx-5 my-2">More Info</button>
 								</Link>
 							</div>
@@ -83,23 +83,28 @@ export default function Home() {
 								<img src={tacoOchoGroupPhoto} className="h-full w-full object-cover" alt="banner" />
 							</header>
 							<div className="m-3">
-								<h3 className="h6">August 8, 2026</h3>
+								<h3 className="h6">August 1, 2026</h3>
 								<h2 className="h3">Taco Ocho</h2>
 								<div className="h-10">
-									<p className="line-clamp-2 opacity-60">8 miles, 8 tacos, all on August 8th.</p>
+									<p className="line-clamp-2 opacity-60">8 miles, 8 tacos, all on August 1st.</p>
 								</div>
 								<div className="mt-4 mb-4 space-y-2">
 									<div className="flex items-center gap-2 text-gray-700">
 										<Ruler /> <span>8 miles</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
-										<UtensilsIcon /><span>3 taco locations</span>
+										<UtensilsIcon />
+										<span>3 taco locations</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
-										<FlagIcon /><span>Northgate Station</span>
+										<FlagIcon />
+										<span>Northgate Station</span>
 									</div>
 								</div>
-								<Link className="flex w-full justify-center rounded-xl bg-amber-500" to="/taco-ocho">
+								<Link
+									className="flex w-full justify-center rounded-xl bg-amber-500"
+									to="/taco-ocho"
+								>
 									<button className="mx-5 my-2">More Info</button>
 								</Link>
 							</div>
@@ -109,7 +114,11 @@ export default function Home() {
 					<div className="glass-strong flex flex-col gap-6 overflow-hidden rounded-xl border transition-shadow hover:shadow-2xl">
 						<div className="relative overflow-hidden">
 							<header className="relative">
-								<img src={eggnogLegJogGroupPhoto} className="h-full w-full object-cover" alt="banner" />
+								<img
+									src={eggnogLegJogGroupPhoto}
+									className="h-full w-full object-cover"
+									alt="banner"
+								/>
 							</header>
 							<div className="m-3">
 								<h3 className="h6">November 2026</h3>
@@ -124,10 +133,12 @@ export default function Home() {
 										<Ruler /> <span>10k</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
-										<CroissantIcon /><span>4 holiday stations</span>
+										<CroissantIcon />
+										<span>4 holiday stations</span>
 									</div>
 									<div className="flex items-center gap-2 text-gray-700">
-										<FlagIcon /><span>Woodland Park</span>
+										<FlagIcon />
+										<span>Woodland Park</span>
 									</div>
 								</div>
 								<Link className="flex w-full justify-center rounded-xl bg-amber-500" to="/eggnog">

@@ -16,7 +16,8 @@ export default [
 		]),
 		layout('routes/taco-ocho/layout.tsx', [
 			route('taco-ocho', 'routes/taco-ocho/index.tsx'),
-			route('taco-ocho/2025', 'routes/taco-ocho/2025.tsx')
+			route('taco-ocho/2025', 'routes/taco-ocho/2025.tsx'),
+			route('taco-ocho/2026', 'routes/taco-ocho/2026.tsx')
 		])
 	])
 ] satisfies RouteConfig;
