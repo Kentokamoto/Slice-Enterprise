@@ -18,6 +18,7 @@ export default [
 			route('taco-ocho', 'routes/taco-ocho/index.tsx'),
 			route('taco-ocho/2025', 'routes/taco-ocho/2025.tsx'),
 			route('taco-ocho/2026', 'routes/taco-ocho/2026.tsx')
-		])
+		]),
+		route('*', 'routes/catchall.tsx')
 	])
 ] satisfies RouteConfig;
