@@ -67,6 +67,53 @@ export default function TacoOcho2026() {
 				<div className="mt-2">3</div>
 			</div>
 
+			<div className="mx-5 mt-6 max-w-full">
+				<a
+					href="https://slice-enterprises.printful.me/"
+					target="_blank"
+					rel="noopener"
+					className="block"
+				>
+					<div className="flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-linear-to-r from-blue-500 to-blue-900 px-5 py-7 text-white transition-all hover:from-blue-600 hover:to-blue-950 sm:flex-row">
+						<div className="w-auto">
+							<p className="text-2xl font-extrabold">Get your Slice-a-thon Gear!</p>
+							<p className="text-md font-semibold">T-shirts, hats, and more now available now</p>
+						</div>
+						<button className="w-40 shrink-0 rounded-lg bg-white p-3 font-semibold text-blue-900">
+							Shop merch →
+						</button>
+					</div>
+				</a>
+			</div>
+
+			<div className="mx-5 mt-6 max-w-full">
+				<a
+					href="https://www.mightycause.com/story/Tacoocho"
+					target="_blank"
+					rel="noopener"
+					className="block"
+				>
+					<div className="flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-green-900  px-5 py-7 text-white hover:bg-green-800 sm:flex-row">
+						<div className="w-auto">
+						<p className="text-2xl font-extrabold">Donate to Food Lifeline!</p>
+						<p className="text-md font-semibold">
+								This year Taco Ocho is partnering with Food Lifeline, a non-profit organization
+								working to fight hunger in Washington. Food Lifeline tackles hunger by distributing
+								nutritious food to local partners such as food banks and shelters. Let’s celebrate
+								our love for running and tacos, and support our community in the process.
+							</p>
+							<p className='text-md font-semibold'>
+								Please consider making a one time donation of $20, or an amount you’re comfortable
+								with as part of your Taco Ocho experience.
+							</p>
+						</div>
+						<button className="w-40 shrink-0 rounded-lg bg-white p-3 font-semibold text-green-900">
+							Donate Here →
+						</button>
+					</div>
+				</a>
+			</div>
+
 			<div className="glass-strong m-3 min-h-[30vh] rounded-2xl border border-black/10 p-3 shadow-md">
 				{/* Mobile: select dropdown */}
 				<div className="mb-4 sm:hidden">
