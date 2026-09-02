@@ -11,10 +11,9 @@ export default function Registration({ iframeId, children }: Props) {
 		script.src = 'https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js';
 		script.onload = () => {
 			if (window && 'jotformEmbedHandler' in window) {
-				(window as Window & { jotformEmbedHandler: (selector: string, base: string) => void }).jotformEmbedHandler(
-					`iframe[id='${iframeId}']`,
-					'https://form.jotform.com/'
-				);
+				(
+					window as Window & { jotformEmbedHandler: (selector: string, base: string) => void }
+				).jotformEmbedHandler(`iframe[id='${iframeId}']`, 'https://form.jotform.com/');
 			}
 		};
 		document.body.appendChild(script);

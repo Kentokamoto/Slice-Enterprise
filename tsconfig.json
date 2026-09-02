@@ -1,9 +1,5 @@
 {
-	"include": [
-		"**/*.ts",
-		"**/*.tsx",
-		".react-router/types/**/*"
-	],
+	"include": ["**/*.ts", "**/*.tsx", ".react-router/types/**/*"],
 	"compilerOptions": {
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"types": ["vite/client"],
@@ -13,6 +9,7 @@
 		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
+		"rootDirs": [".", "./.react-router/types"],
 		"target": "ES2022",
 		"strict": true,
 		"allowJs": true,

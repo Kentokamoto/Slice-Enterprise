@@ -14,7 +14,12 @@ export default function PizzaBackground() {
 		let animationId: number;
 
 		try {
-			renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false, powerPreference: 'low-power' });
+			renderer = new THREE.WebGLRenderer({
+				canvas,
+				alpha: true,
+				antialias: false,
+				powerPreference: 'low-power'
+			});
 		} catch {
 			setFailed(true);
 			return;
@@ -31,7 +36,12 @@ export default function PizzaBackground() {
 		renderer.toneMappingExposure = 1.8;
 
 		const scene = new THREE.Scene();
-		const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+		const camera = new THREE.PerspectiveCamera(
+			60,
+			window.innerWidth / window.innerHeight,
+			0.1,
+			100
+		);
 		camera.position.z = 20;
 
 		const pmrem = new THREE.PMREMGenerator(renderer);
@@ -69,10 +79,11 @@ export default function PizzaBackground() {
 
 		const loader = new GLTFLoader();
 		loader.load('/pizza.glb', (gltf) => {
-			let foundMesh: THREE.Mesh | null = null;
+			const meshes: THREE.Mesh[] = [];
 			gltf.scene.traverse((child) => {
-				if (child instanceof THREE.Mesh && !foundMesh) foundMesh = child;
+				if (child instanceof THREE.Mesh) meshes.push(child);
 			});
+			const foundMesh = meshes[0];
 			if (!foundMesh) return;
 
 			instancedMesh = new THREE.InstancedMesh(foundMesh.geometry, foundMesh.material, PIZZA_COUNT);
@@ -93,8 +104,16 @@ export default function PizzaBackground() {
 			const elapsed = clock.getElapsedTime();
 			if (instancedMesh) {
 				pizzaData.forEach((d, i) => {
-					dummy.position.set(d.x, d.y + Math.sin(elapsed * d.bobSpeed + d.bobOffset) * d.bobAmplitude, d.z);
-					dummy.rotation.set(d.rotX + elapsed * d.spinSpeedX, d.rotY + elapsed * d.spinSpeedY, d.rotZ);
+					dummy.position.set(
+						d.x,
+						d.y + Math.sin(elapsed * d.bobSpeed + d.bobOffset) * d.bobAmplitude,
+						d.z
+					);
+					dummy.rotation.set(
+						d.rotX + elapsed * d.spinSpeedX,
+						d.rotY + elapsed * d.spinSpeedY,
+						d.rotZ
+					);
 					dummy.scale.setScalar(d.scale);
 					dummy.updateMatrix();
 					instancedMesh!.setMatrixAt(i, dummy.matrix);
@@ -117,7 +136,8 @@ export default function PizzaBackground() {
 			cancelAnimationFrame(animationId);
 			if (instancedMesh) {
 				instancedMesh.geometry.dispose();
-				if (Array.isArray(instancedMesh.material)) instancedMesh.material.forEach((m) => m.dispose());
+				if (Array.isArray(instancedMesh.material))
+					instancedMesh.material.forEach((m) => m.dispose());
 				else instancedMesh.material.dispose();
 				scene.remove(instancedMesh);
 			}

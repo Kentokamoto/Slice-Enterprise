@@ -1,9 +1,7 @@
 {
-  "buildCommand": "bun run build",
-  "installCommand": "bun install",
-  "outputDirectory": "build/client",
-  "framework": null,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+	"buildCommand": "bun run build",
+	"installCommand": "bun install",
+	"outputDirectory": "build/client",
+	"framework": null,
+	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

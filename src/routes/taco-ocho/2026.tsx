@@ -93,16 +93,16 @@ export default function TacoOcho2026() {
 					rel="noopener"
 					className="block"
 				>
-					<div className="flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-green-900  px-5 py-7 text-white hover:bg-green-800 sm:flex-row">
+					<div className="flex cursor-pointer flex-col items-center justify-between gap-4 rounded-2xl bg-green-900 px-5 py-7 text-white hover:bg-green-800 sm:flex-row">
 						<div className="w-auto">
-						<p className="text-2xl font-extrabold">Donate to Food Lifeline!</p>
-						<p className="text-md font-semibold">
+							<p className="text-2xl font-extrabold">Donate to Food Lifeline!</p>
+							<p className="text-md font-semibold">
 								This year Taco Ocho is partnering with Food Lifeline, a non-profit organization
 								working to fight hunger in Washington. Food Lifeline tackles hunger by distributing
 								nutritious food to local partners such as food banks and shelters. Let’s celebrate
 								our love for running and tacos, and support our community in the process.
 							</p>
-							<p className='text-md font-semibold'>
+							<p className="text-md font-semibold">
 								Please consider making a one time donation of $20, or an amount you’re comfortable
 								with as part of your Taco Ocho experience.
 							</p>
