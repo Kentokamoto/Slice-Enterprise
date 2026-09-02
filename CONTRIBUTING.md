@@ -92,8 +92,19 @@ This is a **React Router 7** app (framework mode, SPA — `ssr: false`).
 - **`public/`** — Static files served as-is (e.g. `favicon.svg`, `pizza.glb`, `.gpx`)
 - **`.github/workflows/`** — CI/CD (e.g. deploy)
 
-Put new shared UI in `src/lib/components/` and register new routes in `src/routes.ts`. To scaffold a
-new year for an existing event, use the `/add-event-year` slash command.
+Put new shared UI in `src/lib/components/` and register new routes in `src/routes.ts`.
+
+## Adding an Event Year
+
+Each event (`taco-ocho`, `slice-a-thon`, `eggnog`) gets a new page per year. The canonical
+step-by-step checklist lives in
+[`.claude/commands/add-event-year.md`](.claude/commands/add-event-year.md): create `<YYYY>.tsx`,
+copy the `<YYYY>/` component folder, register the route in `src/routes.ts`, point the event index at
+the new year, then run `bun run typecheck` and `bun run lint`.
+
+- **Using Claude Code?** Run `/add-event-year <event-slug> <year>` to scaffold it automatically.
+- **Otherwise**, follow the steps in that file by hand (or paste them into the assistant of your
+  choice) — they reference concrete file paths and don't depend on any specific tool.
 
 ## Coding Standards
 
