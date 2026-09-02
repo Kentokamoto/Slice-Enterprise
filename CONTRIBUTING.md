@@ -23,10 +23,10 @@ Contributors should align with these design wishes so the site stays consistent 
 
 ### Visual & Aesthetic
 
-Style with **Tailwind CSS v4** utility classes. Reuse the shared components in
-`src/lib/components/` whenever possible instead of creating custom ones. Compose conditional and
-variant classes with the existing helpers (`class-variance-authority`, `clsx`, `tailwind-merge`)
-rather than hand-concatenating class strings.
+Style with **Tailwind CSS v4** utility classes. Reuse the shared components in `src/lib/components/`
+whenever possible instead of creating custom ones. Compose conditional and variant classes with the
+existing helpers (`class-variance-authority`, `clsx`, `tailwind-merge`) rather than
+hand-concatenating class strings.
 
 ### Accessibility & Inclusivity
 

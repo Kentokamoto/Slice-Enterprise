@@ -1,0 +1,13 @@
+#!/bin/sh
+# Shared git pre-commit hook. Enabled via `core.hooksPath` (see the "prepare"
+# script in package.json, run automatically after `bun install`).
+
+bun run lint || {
+	echo "✖ lint/format failed — run 'bun run format' then re-stage." >&2
+	exit 1
+}
+
+bun run typecheck || {
+	echo "✖ typecheck failed — fix the type errors above, then re-stage." >&2
+	exit 1
+}
