@@ -35,6 +35,9 @@ dist-ssr
 .DS_Store
 Thumbs.db
 
+# Claude Code (keep .claude/ tracked, but not machine-local settings)
+.claude/settings.local.json
+
 # Env
 .env
 .env.*
