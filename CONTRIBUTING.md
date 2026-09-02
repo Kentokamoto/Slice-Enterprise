@@ -23,8 +23,10 @@ Contributors should align with these design wishes so the site stays consistent 
 
 ### Visual & Aesthetic
 
-Use the provided component library whenever possible instead of creating custom components.
-**Component Library:** [Skeleton](https://www.skeleton.dev/)
+Style with **Tailwind CSS v4** utility classes. Reuse the shared components in
+`src/lib/components/` whenever possible instead of creating custom ones. Compose conditional and
+variant classes with the existing helpers (`class-variance-authority`, `clsx`, `tailwind-merge`)
+rather than hand-concatenating class strings.
 
 ### Accessibility & Inclusivity
 
@@ -69,27 +71,29 @@ Use the provided component library whenever possible instead of creating custom 
 
 4. **Run checks** (before submitting a PR):
    ```bash
-   bun run check    # TypeScript / Svelte
-   bun run lint     # oxlint + oxfmt --check
-   bun run test     # Vitest (unit tests)
+   bun run typecheck  # react-router typegen + tsc --noEmit
+   bun run lint       # oxlint + oxfmt --check
+   bun run test       # Vitest (unit tests)
    ```
 
 ## Project Structure
 
-**Note**: Folder structure subject to change for 2026 site.
+This is a **React Router 7** app (framework mode, SPA — `ssr: false`).
 
 - **`src/`** — Application source
-  - **`app.html`**, **`app.css`**, **`app.d.ts`** — App shell and global styles/types
-  - **`lib/`** — Reusable components and utilities (e.g. `Accordion.svelte`, `Registration.svelte`,
-    `FAQ.svelte`)
-  - **`lib/assets/`** — Images and other static assets used by the app
-  - **`routes/`** — SvelteKit file-based routes
-    - `+layout.svelte`, `+page.svelte` — Root layout and home page
-    - `race-day-details/`, `taco/`, `thank-you/` — Route segments with their own `+page.svelte`
-- **`static/`** — Static files served as-is (e.g. favicon, GPX)
+  - **`root.tsx`** — Document shell (`<html>`, `<head>`, global `<Meta>`/`<Links>`)
+  - **`routes.ts`** — Route config; every route is registered here
+  - **`routes/`** — Route modules. Each event (`taco-ocho/`, `slice-a-thon/`, `eggnog/`) follows the
+    same shape: `layout.tsx` (shared layout), `index.tsx` (redirects to the current year),
+    `<YYYY>.tsx` (the year's page), and a `<YYYY>/` folder for per-year components.
+  - **`layouts/`** — Shared layouts (e.g. `root-layout.tsx`)
+  - **`lib/components/`** — Reusable components (plus `legacy/` for older ones)
+  - **`lib/assets/`** — `.webp` images and other bundled assets
+- **`public/`** — Static files served as-is (e.g. `favicon.svg`, `pizza.glb`, `.gpx`)
 - **`.github/workflows/`** — CI/CD (e.g. deploy)
 
-Put new shared UI in `src/lib/` and new pages under `src/routes/` following SvelteKit conventions.
+Put new shared UI in `src/lib/components/` and register new routes in `src/routes.ts`. To scaffold a
+new year for an existing event, use the `/add-event-year` slash command.
 
 ## Coding Standards
 
@@ -102,8 +106,8 @@ Put new shared UI in `src/lib/` and new pages under `src/routes/` following Svel
 1. **Branch**: Create a branch from `main` with a descriptive name, e.g.
    `fix/registration-validation`, `feat/faq-expand`.
 2. **Scope**: Keep PRs focused on one change or feature so they’re easier to review.
-3. **Checks**: Ensure `bun run check`, `bun run lint`, and `bun run test` all pass before requesting
-   review.
+3. **Checks**: Ensure `bun run typecheck`, `bun run lint`, and `bun run test` all pass before
+   requesting review.
 4. **Review**: Someone will review your PR; address feedback and keep the conversation in the PR
    thread.
 
@@ -121,9 +125,9 @@ Use clear, concise messages. Prefer present tense and a short summary line.
 
 ## Testing
 
-- **Run tests**: `bun run test` (single run) or `bun run test:unit` (watch mode).
-- **Location**: Unit tests live next to the code they cover (e.g. `page.svelte.test.ts` next to the
-  page) or in a `*.test.ts` / `*.spec.ts` file.
+- **Run tests**: `bun run test` (Vitest, single run, jsdom environment).
+- **Location**: Unit tests live next to the code they cover, matching
+  `src/**/*.{test,spec}.{js,ts,tsx}` (e.g. `Counter.test.tsx` next to the component).
 - **New/changed behavior**: Add or update tests so existing and new functionality stay covered.
 
 ## Questions
