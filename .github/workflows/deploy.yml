@@ -64,7 +64,6 @@ jobs:
         run: |
           echo "Deployed site URL: ${{ steps.deployment.outputs.page_url }}"
           sleep 10
-          # Check if enhanced images exist on the deployed site
-          curl -I "${{ steps.deployment.outputs.page_url }}_app/" || echo "Assets directory not accessible"
-          # Try to access a specific image (you'll need to update this with actual hash)
-          curl -I "${{ steps.deployment.outputs.page_url }}_app/immutable/assets/" || echo "Immutable assets not found"
+          # React Router build emits hashed assets under /assets/
+          curl -I "${{ steps.deployment.outputs.page_url }}" || echo "Site not accessible"
+          curl -I "${{ steps.deployment.outputs.page_url }}assets/" || echo "Assets directory not found"

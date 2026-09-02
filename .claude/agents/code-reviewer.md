@@ -22,7 +22,7 @@ changed; don't rewrite the world.
 - **Correctness**: logic errors, broken imports, unhandled states, wrong route registrations in
   `src/routes.ts`.
 - **Conventions**: uses the `~` path alias for `/src` imports; follows the per-event folder pattern
-  (`layout.tsx` / `index.tsx` / `<YYYY>.tsx` / `<YYYY>/`); Prettier style (tabs, single quotes, no
+  (`layout.tsx` / `index.tsx` / `<YYYY>.tsx` / `<YYYY>/`); oxfmt style (tabs, single quotes, no
   trailing comma) — but let `bun run lint` be the source of truth rather than eyeballing formatting.
 - **React 19 / React Router 7**: correct hook usage, `meta` exports typed as `MetaFunction`, no
   server-only assumptions (this is an SPA, `ssr: false`).

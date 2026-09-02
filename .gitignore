@@ -27,7 +27,6 @@ dist-ssr
 .vercel
 .netlify
 .wrangler
-/.svelte-kit
 /.react-router
 /build
 

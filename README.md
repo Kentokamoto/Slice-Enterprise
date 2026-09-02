@@ -1,7 +1,7 @@
 # Slice Enterprise
 
-A SvelteKit web application for Slice Enterprise — a running organization that combines running and
-food in a single event.
+A React Router 7 web application for Slice Enterprise — a running organization that combines running
+and food in a single event.
 
 ## Description
 
@@ -59,13 +59,14 @@ hosted by Slice Enterprise.
 
 ## Tech Stack
 
-- **Framework**: SvelteKit
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Build Tool**: Vite
+- **Framework**: React Router 7 (framework mode, SPA — `ssr: false`) with React 19
+- **Styling**: Tailwind CSS v4
+- **Language**: TypeScript (strict)
+- **Build Tool**: Vite 6
 - **Testing**: Vitest
-- **Linting**: ESLint + Prettier (These will be updated to use oxlint and oxfmt)
-- **Icons**: Font Awesome
+- **Linting & Formatting**: oxlint + oxfmt
+- **Icons**: lucide-react
+- **3D**: three
 
 ## Project Structure
 
