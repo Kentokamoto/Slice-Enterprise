@@ -18,7 +18,7 @@ export default function Donate() {
 					alt="free2fly run club group"
 					src={free2flyGroup}
 				/>
-				<div className="absolute inset-0 bg-linear-to-b from-orange/70 via-orange/60 to-orange/80" />
+				<div className="from-orange/70 via-orange/60 to-orange/80 absolute inset-0 bg-linear-to-b" />
 				<div className="relative z-10 max-w-4xl px-4 text-center text-white">
 					<h1 className="mb-4 text-4xl font-extrabold md:mb-6 md:text-6xl">Support Free2Fly!</h1>
 					<p className="mb-6 text-lg font-bold text-gray-100 md:mb-8 md:text-2xl">
@@ -68,14 +68,14 @@ export default function Donate() {
 				</div>
 			</section>
 
-			<section className="mx-auto my-6 max-w-4xl rounded-2xl border border-venmo-blue/35 bg-venmo-blue px-6 py-8 text-center text-white">
+			<section className="border-venmo-blue/35 bg-venmo-blue mx-auto my-6 max-w-4xl rounded-2xl border px-6 py-8 text-center text-white">
 				<h1 className="text-2xl font-bold md:text-3xl">Make a Donation Today</h1>
 				<p className="my-5 text-lg">
 					Your contribution directly supports visually-impaired athletes and helps grow this
 					incredible community.
 				</p>
 				<a href="https://venmo.com/u/free2flyrc">
-					<button className="rounded-2xl bg-white px-10 py-3 text-lg font-bold text-venmo-blue">
+					<button className="text-venmo-blue rounded-2xl bg-white px-10 py-3 text-lg font-bold">
 						Donate via Venmo
 					</button>
 				</a>
@@ -92,7 +92,7 @@ export default function Donate() {
 							target="_blank"
 							rel="noreferrer"
 							data-outbound="free2fly instagram"
-							className="text-instagram-pink hover:text-pink-700 font-semibold"
+							className="text-instagram-pink font-semibold hover:text-pink-700"
 						>
 							@free2fly_RC
 						</a>

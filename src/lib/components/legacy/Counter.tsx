@@ -28,7 +28,7 @@ export default function Counter({ judgementDate }: Props) {
 		<div className="mx-auto flex max-w-2xl flex-row justify-center gap-2 py-3 sm:gap-6 sm:py-4">
 			{UNITS.map((unit) => (
 				<div key={unit} className="flex min-w-16 flex-col items-center px-2 sm:min-w-20 sm:px-4">
-					<span className="font-display text-3xl font-bold leading-none text-white tabular-nums sm:text-5xl">
+					<span className="font-display text-3xl leading-none font-bold text-white tabular-nums sm:text-5xl">
 						{String(time[unit]).padStart(2, '0')}
 					</span>
 					<span className="mt-1 text-xs font-medium tracking-wider text-white/70 uppercase sm:text-sm">

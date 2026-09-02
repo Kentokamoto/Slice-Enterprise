@@ -20,8 +20,8 @@ export default function About() {
 					<p>
 						Slice Enterprises started with a simple but delicious idea: what if we could have pizza
 						during our race? In 2025, that idea became our first-ever Slice-a-Thon event in Seattle,
-						and the energy from that day made it clear we were onto something special. Runners showed
-						up, had a blast, and left with full stomachs. Not long after, a member pitched a
+						and the energy from that day made it clear we were onto something special. Runners
+						showed up, had a blast, and left with full stomachs. Not long after, a member pitched a
 						taco-themed race. Then came the idea for a holiday-themed event, and that's when it hit
 						us: this was more than just one race. Slice Enterprises was born.
 					</p>
