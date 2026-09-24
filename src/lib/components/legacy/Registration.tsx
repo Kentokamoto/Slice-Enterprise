@@ -1,16 +1,12 @@
 import { useEffect } from 'react';
 
 interface Props {
-
-	/** JotForm iframe id. Omit for non-JotForm embeds to skip the resize handler. */
-	iframeId?: string;
+	iframeId: string;
 	children: React.ReactNode;
 }
 
 export default function Registration({ iframeId, children }: Props) {
 	useEffect(() => {
-		if (!iframeId) return;
-
 		const script = document.createElement('script');
 		script.src = 'https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js';
 		script.onload = () => {

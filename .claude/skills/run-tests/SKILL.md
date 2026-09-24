@@ -41,7 +41,8 @@ This run's arguments are `$ARGUMENTS`.
      `catchall.tsx`, which redirects to `/`, so landing on `/` means the route is broken.
    - Open each `/<event>/<YYYY>` path and confirm the URL stays put. Check `read_console_messages`
      with `onlyErrors` and report errors from the site's own code.
-   - On each page, use `javascript_tool` to read the `src` of the iframe whose `title` ends in
+   - On each page, use `javascript_tool` to find the registration URL. It's the `href` of the link
+     whose text starts with "Register", or the `src` of the iframe whose `title` ends in
      "Registration". Fetch that URL with `curl -sSL -o /dev/null -w '%{http_code}'`. A current-year
      form must return 200, because anything else blocks sign-ups. A private Google Form returns 401.
      A past-year form that fails is a note, not a failure.
