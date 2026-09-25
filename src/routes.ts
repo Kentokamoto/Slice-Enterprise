@@ -7,7 +7,8 @@ export default [
 		route('donate', 'routes/donate.tsx'),
 		layout('routes/eggnog/layout.tsx', [
 			route('eggnog', 'routes/eggnog/index.tsx'),
-			route('eggnog/2025', 'routes/eggnog/2025.tsx')
+			route('eggnog/2025', 'routes/eggnog/2025.tsx'),
+			route('eggnog/2026', 'routes/eggnog/2026.tsx')
 		]),
 		layout('routes/slice-a-thon/layout.tsx', [
 			route('slice-a-thon', 'routes/slice-a-thon/index.tsx'),

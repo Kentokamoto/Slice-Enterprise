@@ -15,7 +15,10 @@ recent year as the template.
 ## Steps
 
 1. **Find the template year.** In `src/routes/<event>/`, identify the highest existing `<YYYY>.tsx`
-   and its matching `<YYYY>/` component folder. That's your template.
+   and its matching `<YYYY>/` component folder. That's your template. If that year has no `<YYYY>/`
+   folder, it predates the tabbed layout. Use `src/routes/taco-ocho/2026.tsx` and its folder as the
+   template instead, and carry over the event's content (story, FAQ, Strava route) from its last
+   year.
 
 2. **Create `src/routes/<event>/<new-year>.tsx`** by copying the template year's `.tsx`, then
    update:
@@ -24,6 +27,8 @@ recent year as the template.
      not obvious)
    - any hardcoded date/location/distance display values
    - the component imports to point at `./<new-year>/...` (see step 3)
+   - registration as a button that links out to the form, not an embedded iframe, because a
+     scrolling iframe inside the page fails accessibility
 
 3. **Create `src/routes/<event>/<new-year>/`** and copy each component from the template year's
    folder (e.g. `Route<oldyear>.tsx`, `Stops<oldyear>.tsx`, `Faq<oldyear>.tsx`). Rename each

@@ -9,6 +9,9 @@ export default function EggnogLayout() {
 				<Link to="/eggnog/2025">
 					<button className={pathname.includes('2025') ? 'font-bold' : ''}>2025</button>
 				</Link>
+				<Link to="/eggnog/2026">
+					<button className={pathname.includes('2026') ? 'font-bold' : ''}>2026</button>
+				</Link>
 			</div>
 		</>
 	);
