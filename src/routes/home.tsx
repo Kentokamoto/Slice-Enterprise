@@ -24,7 +24,7 @@ export default function Home() {
 					<h1 className="mb-4 text-4xl font-bold md:mb-6 md:text-6xl">Crust or Bust.</h1>
 					<p className="mb-6 text-lg text-gray-100 md:mb-8 md:text-2xl">Now that's amore!</p>
 					<div className="flex flex-col justify-center gap-4 sm:flex-row">
-						<Link to="/taco-ocho">
+						<Link to="/eggnog">
 							<button className="w-full rounded-xl bg-orange-500/90 py-2 text-white hover:bg-orange-600 hover:shadow-lg sm:w-2xs">
 								View Our Next Run
 							</button>
