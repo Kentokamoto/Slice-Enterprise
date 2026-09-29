@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => [
 const eventDate = new Date('November 8, 2026 10:00 AM PST');
 
 const registrationUrl =
-	'https://docs.google.com/forms/d/e/1FAIpQLSdxQ6iu3-Znd-qpkJYdvSb96l8JyS9ukZB7EdQ6yTwb6n3SXg/viewform';
+	'https://docs.google.com/forms/d/e/1FAIpQLSewU3G8ngmQkDfHCun3CaciE1AUsEGiU2LHALHGOLPwd737Zw/viewform';
 
 const TABS = ['overview', 'route', 'faq'] as const;
 type Tab = (typeof TABS)[number];
