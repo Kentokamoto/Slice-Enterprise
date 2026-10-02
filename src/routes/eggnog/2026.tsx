@@ -34,29 +34,6 @@ export default function Eggnog2026() {
 				<Counter judgementDate={eventDate.getTime()} />
 			</div>
 
-			<div className="mx-5 mt-6 max-w-full">
-				<a
-					href={donationUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-green-900 px-5 py-7 text-white hover:bg-green-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-900 sm:flex-row"
-				>
-					<div>
-						<p className="text-2xl font-extrabold">Donate to Food Lifeline!</p>
-						<p className="text-md font-semibold">
-							This holiday season, the Eggnog Leg Jog is partnering with Food Lifeline, a non-profit
-							working to fight hunger in Washington. Food Lifeline gets nutritious food to local
-							partners such as food banks and shelters. Please consider a donation as part of your
-							Leg Jog so more of our neighbors can share in the holiday cheer.
-						</p>
-					</div>
-					<span className="w-40 shrink-0 rounded-lg bg-white p-3 text-center font-semibold text-green-900">
-						Donate here <span aria-hidden="true">→</span>
-					</span>
-					<span className="sr-only"> (opens in a new tab)</span>
-				</a>
-			</div>
-
 			<div className="grid grid-cols-1 md:grid-cols-2 md:gap-1 lg:grid-cols-4">
 				{[
 					{ icon: <CalendarFoldIcon />, label: 'Date', value: 'November 8, 2026' },
@@ -138,6 +115,22 @@ export default function Eggnog2026() {
 							way to consume cookies, egg nog and other classic holiday treats, which will warm your
 							body and grow your heart at least three sizes.
 						</p>
+						<h2 className="mt-6 font-bold">Donate to Food Lifeline</h2>
+						<p className="mt-4">
+							This holiday season, Eggnog Leg Jog is partnering with Food Lifeline, a non-profit
+							working to fight hunger in Washington. Food Lifeline gets nutritious food to local
+							partners such as food banks and shelters. Please consider a{' '}
+							<a
+								href={donationUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="font-semibold text-green-900 underline underline-offset-2 hover:text-green-800"
+							>
+								donation
+								<span className="sr-only"> (opens in a new tab)</span>
+							</a>{' '}
+							as part of your Leg Jog so more of our neighbors can share in the holiday cheer.
+						</p>
 					</div>
 				)}
 				{tab === 'route' && <Route2026 />}
@@ -146,15 +139,29 @@ export default function Eggnog2026() {
 
 			<div className="glass-strong m-3 flex flex-col items-center gap-4 rounded-2xl border border-black/10 p-6 shadow-md">
 				<h2 className="text-red-sauce text-2xl font-bold">Register Here</h2>
-				<a
-					href={registrationUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="bg-red-sauce focus-visible:outline-red-sauce rounded-lg px-6 py-3 text-lg font-semibold text-white transition-colors hover:bg-red-800 focus-visible:outline-2 focus-visible:outline-offset-2"
-				>
-					Register on Google Forms <span aria-hidden="true">→</span>
-					<span className="sr-only"> (opens in a new tab)</span>
-				</a>
+				<div className="flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row">
+					<a
+						href={registrationUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="bg-red-sauce focus-visible:outline-red-sauce rounded-lg px-6 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-red-800 focus-visible:outline-2 focus-visible:outline-offset-2"
+					>
+						Register on Google Forms <span aria-hidden="true">→</span>
+						<span className="sr-only"> (opens in a new tab)</span>
+					</a>
+					<a
+						href={donationUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="rounded-lg bg-green-900 px-6 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-green-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-900"
+					>
+						Donate to Food Lifeline <span aria-hidden="true">→</span>
+						<span className="sr-only"> (opens in a new tab)</span>
+					</a>
+				</div>
+				<p className="text-center text-sm">
+					This holiday season we're raising money for Food Lifeline to fight hunger in Washington.
+				</p>
 			</div>
 		</>
 	);
