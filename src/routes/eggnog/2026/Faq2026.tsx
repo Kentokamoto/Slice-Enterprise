@@ -25,7 +25,7 @@ const faqItems: FaqItem[] = [
 		value: 'food-drinks',
 		question: 'What food and drinks will be served?',
 		segments: [
-			'We will have four holiday cheer stations throughout the race stocked with christmas cookies, apple cider, latkas, egg nog, and other holiday treats.'
+			'We will have four holiday cheer stations throughout the race stocked with Christmas cookies, apple cider, latkes, eggnog, and other holiday treats.'
 		]
 	},
 	{
@@ -33,7 +33,7 @@ const faqItems: FaqItem[] = [
 		question: 'Are there food eating requirements?',
 		segments: [
 			`To be eligible for the prizes, you'll need to eat a specific tasty treat at each holiday cheer station and make sure that the volunteer crosses that item off of your bib.`,
-			`If you don't want to eat the treats, just trust your heart and body and do whatever brings the most holiday joy to you`
+			`If you don't want to eat the treats, just trust your heart and body and do whatever brings the most holiday joy to you.`
 		]
 	},
 	{
@@ -47,7 +47,7 @@ const faqItems: FaqItem[] = [
 		value: 'costume',
 		question: 'Do I have to wear a costume?',
 		segments: [
-			`We highly encourage everybody to embrace the festivities and wear a costume or a holiday sweater, but it's not required`
+			`We highly encourage everybody to embrace the festivities and wear a costume or a holiday sweater, but it's not required.`
 		]
 	},
 	{
@@ -55,21 +55,21 @@ const faqItems: FaqItem[] = [
 		question: 'Is the course marked?',
 		segments: [
 			'We will send out the Strava course route in advance of the race and will have volunteers at key turns.',
-			'We will also have four pace groups, each with pacers who know the route and can lead the way. The pace groups will be from fastest to funnest; 1) Reindeer 2) Dreidel 3) Turkey and 4) Snowman'
+			'We will also have four pace groups, each with pacers who know the route and can lead the way. The pace groups will be from fastest to funnest: 1) Reindeer 2) Dreidel 3) Turkey and 4) Snowman.'
 		]
 	},
 	{
 		value: 'how-many',
 		question: 'How many people will be doing this?',
 		segments: [
-			`To make sure we can ensure a festive and fun experience for everybody, we're going to cap registration at 150 people.`
+			`To ensure a festive and fun experience for everybody, we're going to cap registration at 150 people.`
 		]
 	},
 	{
 		value: 'sign-up',
-		question: 'Do I need to sign-up?',
+		question: 'Do I need to sign up?',
 		segments: [
-			'Yes, we need to have your registration ahead of time to print your race bib, and figure out how many holiday treats we need to purchase. The bib is required to get any of the treats throughout the race'
+			'Yes, we need to have your registration ahead of time to print your race bib, and figure out how many holiday treats we need to purchase. The bib is required to get any of the treats throughout the race.'
 		]
 	},
 	{

@@ -99,21 +99,21 @@ export default function Eggnog2026() {
 					<div>
 						<h1 className="font-bold">The Eggnog Leg Jog is back!</h1>
 						<p className="mt-4">
-							The Egg Nog Leg Jog is the world's first race that not only tests your physical
+							The Eggnog Leg Jog is the world's first race that not only tests your physical
 							fitness, but also your capacity to experience holiday joy! Are you training for a
 							longer winter race, like the Seattle Marathon or CIM? Are you preparing for a
-							cross-country flight to celebrate traditions with family on the east coast? Are you
+							cross-country flight to celebrate traditions with family on the East Coast? Are you
 							gearing up to enjoy numerous Thanksgiving/Christmas/Hanukkah parties, right here in
-							Seattle? Nothing is going to prepare you for all of the holiday magic like the Egg Nog
+							Seattle? Nothing is going to prepare you for all of the holiday magic like the Eggnog
 							Leg Jog.
 						</p>
 						<p className="mt-4">
-							This 10K on November 8th will be run by 100+ family, friends, and soon to be friends.
-							Bring your best holiday themed costume (ie Santa / Scrooge / Menorah) or favorite
+							This 10K on November 8th will be run by 100+ family, friends, and soon-to-be friends.
+							Bring your best holiday-themed costume (e.g., Santa / Scrooge / Menorah) or favorite
 							Christmas sweater and join us at Woodland Park for a festive Leg Jog. We'll run
-							through Greenlake and Woodland Park, stopping at four holiday cheer stations along the
-							way to consume cookies, egg nog and other classic holiday treats, which will warm your
-							body and grow your heart at least three sizes.
+							through Green Lake and Woodland Park, stopping at four holiday cheer stations along
+							the way to consume cookies, eggnog and other classic holiday treats, which will warm
+							your body and grow your heart at least three sizes.
 						</p>
 						<h2 className="mt-6 font-bold">Donate to Food Lifeline</h2>
 						<p className="mt-4">
