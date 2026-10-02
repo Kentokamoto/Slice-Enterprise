@@ -13,9 +13,9 @@ Project memory for Claude Code. Marketing/landing site for a Seattle running-and
 
 ## Package manager: Bun
 
-Use `bun run <script>`. `bun.lock` is the only lockfile. Vercel (`vercel.json`) and CI
-(`.github/workflows/deploy.yml`) both build with Bun. Do not reintroduce `package-lock.json` — don't
-run `npm install`.
+Use `bun run <script>`. `bun.lock` is the only lockfile. Vercel (`vercel.json`) builds with Bun and
+is the only deploy target (no GitHub Actions workflows). Do not reintroduce `package-lock.json` —
+don't run `npm install`.
 
 ## Commands
 
@@ -57,6 +57,4 @@ To add a new event year, use the `/add-event-year` slash command.
 - **`README.md` is stale** — it describes SvelteKit + Font Awesome; the project has migrated to
   React Router 7. Trust `package.json`/config over the README.
 - Leftover `.svelte-kit/` build artifacts remain from the migration.
-- `.github/workflows/deploy.yml` (GitHub Pages, manual-only) still references SvelteKit-style
-  `_app/immutable/assets/` paths in its verify step.
 - See `memory/project_migration.md` for migration history.
